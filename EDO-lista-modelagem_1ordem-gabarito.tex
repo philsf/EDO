@@ -1,0 +1,426 @@
+\everymath{\displaystyle}
+%\documentclass[pdftex,a4paper]{article}
+\documentclass[a4paper]{article}
+%%classes: article, report, book, proc, amsproc
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Misc
+% para acertar os acentos
+\usepackage[brazilian]{babel} 
+%\usepackage[portuguese]{babel} 
+% \usepackage[english]{babel}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+% \usepackage{graphicx} %See PDF section
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{20pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF support
+
+\usepackage[pdftex]{color,graphicx}
+% %% Hyper-refs
+\usepackage[pdftex]{hyperref} % for printing
+% \usepackage[pdftex,bookmarks,colorlinks]{hyperref} % for screen
+
+%% \newif\ifPDF
+%% \ifx\pdfoutput\undefined\PDFfalse
+%% \else\ifnum\pdfoutput > 0\PDFtrue
+%%      \else\PDFfalse
+%%      \fi
+%% \fi
+
+%% \ifPDF
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage{aeguill}
+%%   \usepackage[pdftex]{graphicx,color}
+%%   \usepackage[pdftex]{hyperref}
+%% \else
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage[dvips]{graphicx}
+%%   \usepackage[dvips]{hyperref}
+%% \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math
+\usepackage{amsmath,amsfonts,amssymb}
+% para usar R de Real do jeito que o povo gosta
+\usepackage{amsfonts} % \mathbb
+% para usar as letras frescas como L de Espaco das Transf Lineares
+% \usepackage{mathrsfs} % \mathscr
+
+% Oferecer seno e tangente em pt, com os comandos usuais.
+\providecommand{\sin}{} \renewcommand{\sin}{\hspace{2pt}\mathrm{sen}}
+\providecommand{\tan}{} \renewcommand{\tan}{\hspace{2pt}\mathrm{tg}}
+
+% dt of integrals = \ud t
+\newcommand{\ud}{\mathrm{\ d}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Título e cabeçalho
+%\noindent\parbox[c]{.15\textwidth}{\includegraphics[width=.15\textwidth]{logo}}\hfill
+\parbox[c]{.825\textwidth}{\raggedright%
+  \sffamily {\LARGE
+
+Equações Diferenciais Ordinárias: Gabarito de Modelagem com Equações de
+Primeira Ordem
+
+\par\bigskip}
+% {Centro Universitário Anhanguera de Niterói -- UNIAN\par} 
+% {Curso: Engenharia\par}
+{Prof: Felipe Figueiredo\par}
+{\url{http://sites.google.com/site/proffelipefigueiredo}}
+
+\vspace{1cm}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Observação: Você precisará usar uma calculadora na {\bf última} etapa
+% dos exercícios, para efetuar o cálculo da exponencial e encontrar a
+% resposta final. Por exemplo, se você encontrar a resposta
+% ``$x=10e^{-1}$'', sua calculadora lhe dará a resposta final ``$3,7$''
+% (considerando precisão de uma casa decimal). Você deve usar as
+% propriedades necessárias das exponenciais e logaritmos para encontrar
+% a resposta antes de usar a calculadora.
+
+% Na prova, você não precisará fazer este tipo de cálculo de precisão,
+% portanto não será necessário (nem permitido) o uso de calculadora.
+
+\begin{enumerate}
+
+\section{Velocidade final}
+
+% \item Kenny\circledR\ está dirigindo de madrugada em um bairro
+%   perigoso que não conhece direito. Ao ver o sinal se abrir Kenny
+%   começa a acelerar sua {\it Ferrari}\circledR\ para percorrer a maior
+%   distância possível no menor tempo. O carro derrapa um pouco na
+%   arrancada (acordando assim alguns moradores da rua), mas após
+%   atingir a velocidade $v_0 = 1\frac{m}{s}$ este passa a se movimentar
+%   para a frente. De olho no velocímetro, ele aumenta a força no
+%   acelerador de modo que a aceleração aumente proporcionalmente à
+%   velocidade em cada instante a uma taxa de $\lambda=0,3$. Após
+%   acelerar dessa forma durante $t=15s$ pela rua (que para seu azar é
+%   mal sinalizada e mal iluminada), esta faz uma curva brusca, e ele
+%   atinge o muro de uma casa (acordando assim todos os moradores da
+%   rua). Assuma, por simplicidade, que a massa do carro é desprezível,
+%   e que a velocidade do mesmo aumenta apenas em função da aceleração.
+
+%   \begin{enumerate}
+%   \item Qual é a equação que descreve a variação da velocidade $v$ da
+%     {\it Ferrari} de Kenny em função do tempo $t$?
+%   \item Qual é a velocidade terminal (em $\frac{m}{s}$, com precisão
+%     de uma casa decimal) de Kenny ao encontrar sua morte?
+%   \item (perspectiva) Converta a velocidade acima para $\frac{km}{h}$
+%     e entenda porque Kenny terá um enterro com caixão fechado.
+%   \end{enumerate}
+
+\item 
+  \begin{enumerate}
+  \item $v' = \lambda v \Rightarrow v' = 0,3 v$
+  \item $90,0\frac{m}{s}$
+  \item $324\frac{km}{h}$
+  \end{enumerate}
+
+
+% \item Em suas férias de 2013 Kenny\circledR\ fez um salto de
+%   pára-quedas a uma baixa altitude. No exato instante em que ele salta
+%   do avião, ele abre seu pára-quedas e um abutre passa e fura o
+%   equipamento. Com o pára-quedas danificado, a constante da
+%   resistência do ar é de apenas $\lambda=10$, e a gravidade
+%   $g=10\frac{m}{s^2}$ acelera seu corpo com massa $m=50kg$ até que ele
+%   atinja o chão. Considerando a resistência do ar, e que ele levou
+%   $t=10s$ tensos até encontrar sua morte, determine a velocidade com
+%   que Kenny se estatelou no chão.
+
+%   \begin{enumerate}
+%   \item Qual é a equação que descreve a variação da velocidade de
+%     queda $v$ de Kenny, considerando a resistência do ar $\lambda$, a
+%     gravidade $g$ e a massa $m$ de Kenny \cite{PLT}.
+%   \item Qual é a velocidade terminal de Kenny (em $\frac{m}{s}$, com
+%     precisão de uma casa decimal) ao se estatelar no chão?
+%   \item (perspectiva) Converta a velocidade acima para $\frac{km}{h}$
+%     e entenda porque Kenny terá um enterro com caixão fechado.
+%   \end{enumerate}
+
+\item 
+  \begin{enumerate}
+  \item $v' = g- \frac{\lambda}{m}v \Rightarrow v' = 10-\frac{1}{5}v$
+  \item $43,2\frac{m}{s}$
+  \item $155,5 \frac{km}{h}$
+  \end{enumerate}
+
+\section{Juros compostos}
+
+% \item Você fez um investimento $I$ em uma poupança que rende 4\% ao
+%   ano em juros compostos. Seu depósito inicial foi de R\$10.000.
+
+%   \begin{enumerate}
+%   \item Qual é a equação que descreve o aumento do seu investimento
+%     $I$ (em R\$) no tempo ($t$ em anos)?
+%   \item Qual é o saldo de sua conta após 5 anos?
+%   \end{enumerate}
+
+\item 
+  \begin{enumerate}
+  \item $I' = \lambda I \Rightarrow I' = 0,04I$
+  \item $R\$ 12.214,02$
+  \end{enumerate}
+
+
+\section{Pressão atmosférica}
+
+% \item Ao atingir a altitude de $h=10km$, o cosmonauta russo Iuri
+%   Gagarin em 1961 percebeu que sentia uma grande diferença na pressão
+%   atmosférica a bordo da nave (fnv: fato não-verídico). Ele não sabia
+%   qual era a densidade do ar naquela altitude, mas era muito bom em
+%   resolver equações diferenciais (fnv). Naquele instante ele se
+%   lembrou que (a) a pressão atmosférica $P$ na superfície era de $1$
+%   atmosfera ou, aproximadamente $100kPa$ (quilo pascals), e (b) a
+%   altitudes de até $11km$ a pressão atmosférica cai proporcionalmente
+%   com a altitude a uma taxa aproximada de $1,328kPa$ a cada
+%   $100m$. % supôs que a fez uma
+%   % estimativa simplificada %\cite{PressaoAtmosferica}
+
+%   \begin{enumerate}
+%   \item Qual é a constante $\lambda$ de proporcionalidade do
+%     decaimento da pressão atmosférica $P$ com as unidades ajustadas
+%     (altitude em $km$ e pressão em $kPa$)?
+%   \item Qual foi a equação que Gagarin utilizou para estimar a pressão
+%     atmosférica $P$ (em $kPa$) em função da altitude $h$ (em $km$).
+%   \item Qual foi a estimativa da pressão atmosférica $P$ obtida por
+%     Iuri à altitude $h=10km$ antes de olhar pela janela e descobrir
+%     que ``a Terra é azul''? Considere precisão de uma casa decimal.
+%   \end{enumerate}
+
+\item 
+  \begin{enumerate}
+  \item $\lambda = 0,1328$
+  \item $P' = -\lambda P \Rightarrow P' = P' = -0,1328 P$
+  \item $26,5$
+  \end{enumerate}
+
+
+% \item (pressão de uma coluna em líquido) Em breve \ldots
+
+%  % Jacques-Cousteau certa vez fez um
+%  %  mergulho de x metros de profundidade (fnv). Qual era a pressão que
+%  %  ele sentia a essa profundidade? FIXME
+
+\item \ldots
+
+\section{Diluição de uma concentração}
+
+% \item Em breve \ldots
+% % Um tanque com um misturador contendo x L de solução água e sal
+% %   recebe água pura por cima a uma taxa de $10L/s$, e perde solução por
+% %   baixo a uma taxa de $C=5L/s$. Assuma que o misturador é ideal e
+% %   mantém a solução homogênea durante todo o processo. FIXME
+
+% %   \begin{enumerate}
+% %   \item Qual é a equação que determina a variação da concentração $C$
+% %     em função do tempo (em $s$)?
+% %   \item Após $60s$, qual é a concentração $C$ de sal no tanque.
+% %   \end{enumerate}
+
+\item \ldots
+
+
+
+\section{Circuitos elétricos}
+
+% \item (Circuito RL)
+\item 
+
+
+  \begin{enumerate}
+  \item  $LI' + RI = E \Rightarrow I' + \frac{R}{L} = \frac{E}{L}$
+
+    Substituindo os dados:
+
+    $I' +2I = 12$
+
+  \item $I(t) = 6-6e^{-2t} = 6(1-e^{-2t})$ 
+  \end{enumerate}
+  
+
+\item 
+
+  \begin{enumerate}
+  \item $RQ' + \frac{1}{C} = E \Rightarrow Q' + \frac{1}{RC}Q = \frac{E}{R}$
+
+    Substituindo os dados:
+
+    $Q' +10Q = 10$
+
+  \item $Q(t) = 1-e^{-10t}$
+  \end{enumerate}
+
+  \section{Perda de temperatura para o meio}
+
+% \item (Café frio) Você prepara seu café, que ao ficar pronto está com
+%   temperatura $T=95^\text{o}$C. Como você está concentrado nos seus
+%   exercícios de EDO, o café fica esquecido por $t=15$ minutos sobre a
+%   mesa, exposto à temperatura ambiente. A lei de Newton do
+%   Resfriamento \cite{NewtonResfriamento} diz que o café perderá calor
+%   para o meio a uma taxa proporcional à sua temperatura. Nesta sala, a
+%   constante de proporcionalidade de perda de temperatura é $\lambda =
+%   0,1343$ e a temperatura ambiente é $T_a=20^\text{o}$C.
+
+%   \begin{enumerate}
+%   \item Qual é a equação que relaciona a temperatura do café (em
+%     $^\text{o}$C) em função do tempo $t$ (em minutos), considerando a
+%     temperatura do ambiente $T_a$ e a constante de proporcionalidade
+%     $\lambda$?
+%   \item Quando você percebe que esqueceu de seu café (depois de
+%     $t=15min$), qual é a temperatura final dele (em $^\text{o}$C) com
+%     precisão de uma casa decimal?
+%   \end{enumerate}
+\item 
+  \begin{enumerate}
+  \item $T' = -\lambda(T-T_a) \Rightarrow T' = -0,1343(T-20)$
+  \item $T=30^\text{o}$C
+  \end{enumerate}
+
+
+% \item (CSI) Kenny\circledR foi assassinado em um escritório, onde um
+%   condicionador de ar mantém a temperatura constante. Você é um perito
+%   criminal e chega na cena de um assasinato para estimar a hora da
+%   morte. Você chega na cena do crime à meia noite e introduz um
+%   termômetro no fígado do corpo, observando que sua temperatura
+%   naquele momento é $T=27^o$C. Duas horas depois, você mede a
+%   temperatura novamente obtendo o valor $T=25^\text{o}$C. A
+%   temperatura da sala é regulada pelo ar condicionado e mantida em
+%   $T_a=19^\text{o}$C. \cite{CSI}
+
+%   \begin{enumerate}
+%   \item Considerando a Lei de Newton do Resfriamento, qual é a equação
+%     diferencial que relaciona a temperatura $T$ do corpo em função do
+%     tempo $t$, considerando a temperatura do meio $T_a$ constante
+%     entre o óbito e a constante de proporcionalidade $\lambda$?
+%   \item Qual é a constante de proporcionalidade $\lambda$ de troca de
+%     temperatura neste ambiente?
+%   \item Qual é o tempo aproximado desde o óbito até a primeira medição
+%     de temperatura? Assuma tempo $t$ em horas, temperatura $T$ em
+%     $^\text{o}$C, e use precisão de uma casa decimal. Assuma que a
+%     temperatura do corpo (vivo!) é $T=37^\text{o}$C.
+%   \item (perspectiva) Qual é a hora aproximada da morte?
+%   \end{enumerate}
+
+
+\item 
+  \begin{enumerate}
+  \item $T' = -\lambda (T-T_a) = T' = -\lambda(T-19)$
+  \item $\lambda = -\frac{1}{10} \Rightarrow T' = \frac{1}{10}(T-19)$
+  \item $T= -4,0h$
+  \item O óbito ocorreu aproximadamente às 20h.
+  \end{enumerate}
+
+
+
+\section{Decaimento radioativo}
+
+% \item (Meia vida) A meia vida $t_m$ de um isótopo radioativo é o tempo
+%   necessário para que sua massa original seja reduzida à metade,
+%   assumindo decaimento proporcional à quantidade $Q$ existente em cada
+%   instante $t$. A meia vida do C$^{14}$ (Carbono--14) é
+%   aproximadamente 5730 anos. Qual é a constante de proporcionalidade
+%   do decaimento $\lambda$ do C$^{14}$?
+
+\item $\lambda = \frac{\ln 2}{t_m} \Rightarrow \lambda = \frac{\ln 2}{5730}$
+
+% \item A usina nuclear de Chernobyl sofreu em 1986 um grave acidente,
+%   culminando na explosão do reator 4 (\cite{Chernobyl1,
+%     Chernobyl2}). Após a explosão do reator o Cs$^{137}$ (Césio--137)
+%   lá utilizado foi liberado e transportado pelo vento, contaminando a
+%   região do entorno da usina. Assuma que uma quantidade $Q=27kg$ de
+%   Cs$^{137}$ foi distribuída de forma homogênea na região da usina, e
+%   sabendo que a meia vida do Cs$^{137}$ é de $t_m=30$ anos determine:
+
+%   \begin{enumerate}
+%   \item Qual é a equação que descreve o decaimento da quantidade $Q$
+%     do material radioativo?
+%   \item De acordo com o modelo acima, qual é a quantidade esperada de
+%     Cs$^{137}$ em 2016 (em $kg$)?
+%   \item Kenny\circledR\ foi passear em Chernobyl em suas férias de
+%     2016, e morreu lenta e dolorosamente de câncer de tireóide por
+%     conta da radiação liberada pela quantidade de Cs$^{137}$ estimada
+%     acima. Em que ano ele deveria ter feito esse passeio para ser
+%     exposto a uma quantidade de (apenas) $1kg$?
+%   \end{enumerate}
+
+\item 
+  \begin{enumerate}
+  \item $Q' = -\lambda Q \Rightarrow Q' = -\frac{\ln 2}{30}Q$
+  \item $Q(30) = 13,5 \text{ kg}$
+  \item $Q(t_f) = 1 \text{ kg}\Rightarrow t_f = 143 \text{ anos} \Rightarrow
+    \text{ ano } 2129 $
+  \end{enumerate}
+
+
+% \item Um colecionador milionário está interessado em comprar uma
+%   pintura do Rembrandt (1606--1669), e contratou você como
+%   consultor(a) para averiguar a autenticidade da obra. Pela análise de
+%   datação de carbono (feita em 2014), você aferiu que a pintura em
+%   questão contém 99,879\% do C$^{14}$ original.
+
+%   \begin{enumerate}
+%   \item Determine a idade (em anos, com precisão de duas casas
+%     decimais) da pintura em questão, e conclua se é ou não uma
+%     falsificação.
+%   \item Determine aproximadamente (com uma casa decimal de precisão)
+%     qual o percentual máximo do C$^{14}$ original que uma obra
+%     autêntica de Rembrandt poderia ter (sugestão: por simplificação,
+%     considere como cota superior o ano de morte de Rembrandt).
+%   \end{enumerate}
+\item 
+  \begin{enumerate}
+  \item Aproximadamente 10 anos.
+  \item $95,9\%$
+  \end{enumerate}
+
+
+\end{enumerate}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \begin{thebibliography}{9}
+% % \bibitem{PressaoAtmosferica}
+% %   \url{http://psas.pdx.edu/RocketScience/PressureAltitude_Derived.pdf}
+% %   (Acessado em 30 de Agosto de 2014)
+
+% \bibitem{PLT} Esta modelagem pode ser encontrada na explicação do
+%   livro texto (PLT) da disciplina.
+
+% \bibitem{NewtonResfriamento}
+%   \url{http://www2.pelotas.ifsul.edu.br/denise/caloretemperatura/resfriamento.pdf}
+%   (Acessado em 30 de Agosto de 2014)
+
+% \bibitem{CSI}
+%   \url{https://www.academia.edu/3467740/Forensic_Estimation_of_Time_of_Death_A_Mathematical_Model}
+% (Acessado em 1 de Setembro de 2014)
+
+% \bibitem{Chernobyl1} \url{http://chernobyl.undp.org/english/}
+%   (Acessado em 31 de Agosto de 2014)
+
+% \bibitem{Chernobyl2}
+%   \url{http://www.world-nuclear.org/info/safety-and-security/safety-of-plants/chernobyl-accident/}
+%   (Acessado em 31 de Agosto de 2014)
+
+% \end{thebibliography}
+
+\end{document}
