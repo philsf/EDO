@@ -74,14 +74,16 @@
 \parbox[c]{.825\textwidth}{\raggedright%
   \sffamily {\LARGE
 
-Equações Diferenciais: Notas de Aula: Introdução às EDOs
+Equações Diferenciais: Notas de Aula
+
+Introdução às EDOs
 
 \par\bigskip}
 {Prof: Felipe Figueiredo\par}
 {\url{http://sites.google.com/site/proffelipefigueiredo}\par}
 }
 
-Versão: \verb|20150722|
+Versão: \verb|20150724|
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -94,7 +96,7 @@ Diferencial, em comparação aos tipos de equações elementares já
 familiares ao aluno.
 
 \begin{itemize}
-\item Breve revisão de derivadas
+\item Breve revisão de equações algébricas e derivação de funções
 \item Notações e nomenclaturas de EDOs
 \item Testar candidato a solução
 \end{itemize}
@@ -102,21 +104,230 @@ familiares ao aluno.
 
 \section{Pré-requitos da aula}
 
-\subsection{Derivadas}
+\begin{enumerate}
+\item Derivação das funções polinomiais e exponenciais
+  \begin{enumerate}
+  \item $y=x^2$
+  \item $y=5x^3$
+  \item $y=e^{2x}$
+  \item $y=2e^{2x}$
+  \end{enumerate}
+\item Notações de derivada
+  \begin{enumerate}
+  \item $y'$
+  \item $\frac{\ud y}{\ud x}$
+  \end{enumerate}
+\end{enumerate}
 
-Quando existe, a derivada de uma função $f(x)$ no ponto $x_0$ é o valor $f'(x_0)$ que
-corresponde à variação instantânea de $f$ no ponto $x_0$. Ao variar o
-ponto $x_0$ para outro ponto $x_1$, obtemos o valor $f'(x_1)$,
-possivelmente diferente. Assim sucessivamente, se percorrermos todos
-os valores possíveis para 
+% \subsection{Derivadas}
 
-em si uma função  
+% Quando existe, a derivada de uma função $f(x)$ no ponto $x_0$ é o
+% valor $f'(x_0)$ que corresponde à variação instantânea de $f$ no ponto
+% $x_0$. Ao variar o ponto $x_0$ para outro ponto $x_1$, obtemos o valor
+% $f'(x_1)$, possivelmente diferente. Assim sucessivamente, se
+% percorrermos todos os valores possíveis para
+
+\section{Conteúdo}
+
+\subsection{Problema}
+
+Um CSI chega na cena de um assasinato à meia noite e introduz um
+termômetro no corpo, observando a temperatura $27^o$C. Duas horas
+depois, ele observa a temperatura $25^\text{o}$C. O ar condicionado
+mantém a temperatura ambiente em $19^\text{o}$C. Qual é a hora
+aproximada da morte?
 
 
-\section{Exemplos}
+\subsection{Tipos de equações já familiares}
 
-\begin{displaymath}
-f(x)
-\end{displaymath}
+Equações algébricas são as que envolvem apenas operações algébricas na
+variável. Nelas a variável representa um número.
+
+\subsubsection{Equação de primeiro grau}
+
+Equação: $3x -6 = 0$
+
+Verificar candidato a solução: $x=2$
+
+{\bf Resolução} (observar o lado esquerdo da igualdade)
+
+$3(2) - 6 =0$
+
+$ 6-6 =0$
+
+$0 = 0$
+
+A igualdade é verdadeira, portanto $x=2$ satisfaz a equação. Dizemos
+que $x=2$ {\bf é} uma solução.
+
+\newpage
+\subsubsection{Equação de segundo grau}
+
+Equação: $x^2 - 3x + 2 = 0$
+
+Verificar candidato a solução: $x_1 = 1, x_2 = 3$
+
+{\bf Resolução:}
+\begin{multicols}{2}
+$x_1$:
+
+$1^2 -3(1) + 2 = 0$
+
+$1 - 3 + 2 = 0$
+
+$-2 + 2 = 0$
+
+$0=0$ (Satisfaz)
+
+\columnbreak
+
+$x_2$:
+
+$3^2 -3(3) +2 = 0$
+
+$9-9+2 = 0 $
+
+$0 + 2 = 0$
+
+$2=0$ (Não satisfaz)
+
+\end{multicols}
+
+\subsubsection{Sistema de equações lineares}
+
+Sistema: $
+\left\{ \begin{array}{c}
+    2x_1 + 4x_2 = 10\\
+    3x_1 + 4x_2 = 12\\
+  \end{array}
+\right.$
+
+Verificar candidato a solução: x=$\{x_1= 1, x_2=2\}$
+
+{\bf Resolução:}
+
+\begin{multicols}{2}
+Primeira equação:
+
+$2(1) +4(2)=10$
+
+$2+8=10$
+
+$10=10$ (Satizfaz a primeira equação)
+
+\columnbreak
+Segunda equação:
+
+$3(1)+4(2)=12$
+
+$3+8=12$
+
+$11=12$ (Não satisfaz a segunda equação)
+
+\end{multicols}
+
+% O conjunto $\{x_1= 1, x_2=2\}$ não é solução do sistema.
+
+\subsubsection{Equação exponencial}
+
+Equação: $2^x = 4$
+
+Verificar candidato a solução: $x=3$
+
+{\bf Resolução:}
+
+$2^3 = 4$
+
+$8=4$ (Não satisfaz)
+
+% \subsubsection{Equação trigonométrica}
+
+% Equação: $\sin x + \cos x = -1$
+
+% Verificar candidato a solução: $x = \frac{3\pi}{2}$
+
+\subsection{Equações Diferenciais}
+
+Equações em que a variável representa uma função, $y=y(x)$. Nesta
+equação aparecem tanto a função $y$ como suas derivadas $y'$, $y''$,
+etc.
+
+Equação: $y' = y + 1$
+
+Equação: $y' = y-y^2$
+
+Como verificar candidatos a soluções nesse caso? Como sempre, basta
+substituir na equação. Para isso, precisaremos derivar a função
+quantas vezes for necessário.
+
+\subsubsection{Exemplos}
+
+Equação: $y' - 3y = 0$
+
+Testar os seguintes candidatos de solução: $y=x^3$, $y=e^{3x}$ e $y=2e^{3x}$.
+
+% Testar candidato de solução: $y=e^{3x}$
+
+% Testar candidato de solução: $y=2e^{3x}$
+
+{\bf Resolução:}
+
+Primeiramente vamos reescrever a equação como:
+
+$y' - 3y = 0$
+
+\begin{multicols}{3}
+
+$y=e^{3x}$
+
+$y' = 3e^{3x}$
+
+Substituindo na equação:
+
+$3x^{3x} - 3(e^{3x}) = 0$
+
+$3x^{3x} - 3x^{3x} =0$
+
+$0=0$
+
+(Statisfaz para todo $x$)
+
+\columnbreak
+
+$y=2e^{3x}$
+
+$y' = 6e^{3x}$
+
+Substituindo na equação:
+
+$6e^{3x} - 3(2e^{3x}) = 0$
+
+$6e^{3x} - 6e^{3x} =0$
+
+$0=0$
+
+(Statisfaz para todo $x$)
+
+\columnbreak
+
+$y=x^3$
+
+$y' = 3x^2$
+
+Substituindo na equação:
+
+$3x^2 - 3(x^3) =0 $
+
+$3x^2 - 3x^3 =0 $
+
+(Não satisfaz para todo $x$!)
+
+\end{multicols}
+
+% \subsubsection{Exercício}
+
+% Equação: $y'' + 4y = 0$
+
+% Testar: $y=e^{2x}$
 
 \end{document}
