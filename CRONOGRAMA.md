@@ -1,19 +1,19 @@
 #Cronograma de aulas
 
 1. Introdução às EDOs
-2. Equações de primeira ordem separáveis.
-3. Campos de direções / PVI / Existência e Unicidade de soluções (apenas mencionar que órbitas não se cruzam)
-4. EDOS de primeira ordem com coeficientes variáveis (fator de integração)
-5. Modelagem
-6. Modelagem
+2. EDOs de primeira ordem separáveis.
+3. PVI / Existência e Unicidade de soluções / Campos de direções
+4. Modelagem
+5. Modelagem (exercícios)
+6. EDOs lineares de segunda ordem (parte I)
 7. Aula de dúvidas
 8. P1
 9. Vista de provas
-10. Equações de segunda ordem
-11. Equações de segunda ordem
-12. Equações de segunda ordem
-13. Séries Geométricas
-14. Séries Geométricas
+10. EDOs lineares de segunda ordem (parte II)
+11. Séries Geométricas
+12. Séries de Taylor
+13. Séries de Taylor
+14. Séries de Fourier
 15. Aula de dúvidas
 16. P2
 17. Vista de provas
