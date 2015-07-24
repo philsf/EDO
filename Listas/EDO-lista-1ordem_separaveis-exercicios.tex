@@ -64,8 +64,6 @@
 \newcommand{\ud}{\mathrm{\ d}}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,8 +72,9 @@
 \parbox[c]{.825\textwidth}{\raggedright%
   \sffamily {\LARGE
 
-Equações Diferenciais Ordinárias: Lista de Equações Lineares com
-coeficientes constantes
+Equações Diferenciais: Lista
+
+EDOs de 1a ordem Separáveis
 
 \par\bigskip}
 % {Centro Universitário Anhanguera de Niterói -- UNIAN\par} 
@@ -84,94 +83,97 @@ coeficientes constantes
 {\url{http://sites.google.com/site/proffelipefigueiredo}\par}
 }
 
-Versão: \verb|20141124|
+Versão: \verb|20150724|
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Formulário}
+% \section{Formulário}
 
-Equação diferencial ordinária linear de primeira ordem com
-coeficientes constantes.
+% Equação diferencial ordinária linear de primeira ordem com
+% coeficientes constantes.
 
-\bigskip
-Equação:
-\begin{displaymath}
-  y' = ry
-\end{displaymath}
+% \bigskip
+% Equação:
+% \begin{displaymath}
+%   y' = ry
+% \end{displaymath}
 
-Solução:
-\begin{displaymath}
-  y(x) = K e^{rx}
-\end{displaymath}
+% Solução:
+% \begin{displaymath}
+%   y(x) = K e^{rx}
+% \end{displaymath}
 
-onde $r \in \mathbb{R}, K \in \mathbb{R}$.
+% onde $r \in \mathbb{R}, K \in \mathbb{R}$.
 
-\bigskip
+% \bigskip
 
-Equação:
-\begin{displaymath}
-  y' -ry = a
-\end{displaymath}
+% Equação:
+% \begin{displaymath}
+%   y' -ry = a
+% \end{displaymath}
 
-Solução:
-\begin{displaymath}
-  y(x) = K e^{rx} - \frac{a}{r}
-\end{displaymath}
+% Solução:
+% \begin{displaymath}
+%   y(x) = K e^{rx} - \frac{a}{r}
+% \end{displaymath}
 
-onde $r \in \mathbb{R}^*, K \in \mathbb{R}, a \in \mathbb{R}$.
+% onde $r \in \mathbb{R}^*, K \in \mathbb{R}, a \in \mathbb{R}$.
 
-\bigskip
-Obs: Evite usar as fórmulas acima em todos os exercícios. Faça o
-procedimento de resolução visto em sala tantas vezes quanto julgar
-necessário para adquirir a habilidade necessária.
+% \bigskip
+% Obs: Evite usar as fórmulas acima em todos os exercícios. Faça o
+% procedimento de resolução visto em sala tantas vezes quanto julgar
+% necessário para adquirir a habilidade necessária.
 
 \section{Exercícios}
 
 \begin{enumerate}
-\item Encontre as soluções das seguintes equações diferenciais lineares.
 
+\item EDOs separáveis lineares
   \begin{enumerate}
-  \item $y' -2y = 0$
-  \item $y' -15y = 0$
-  \item $y' = -3y$
-  \item $y' = 9y$
-  \item $y' - \frac{1}{2} y = 0$
-  \item $y' = -\frac{1}{3} y$
-  \item $2y' - 2y = 0$
-  \item $5y' +5y =0 $
+  % \item $y' -2y = 0$
+  % \item $y' -15y = 0$
+  % \item $y' = -3y$
+  % \item $y' = 9y$
+  % \item $y' - \frac{1}{2} y = 0$
+  % \item $y' = -\frac{1}{3} y$
+  % \item $2y' - 2y = 0$
+  % \item $5y' +5y =0 $
   \item $3y' -6y = 0 $
   \item $3y' -2y =0$
-  \item $y' = \sqrt{3}y$
-  \item $y' -2\pi y =0$
-  \item $y' - ry = 0$
-  \end{enumerate}
-
-
-\item Encontre as soluções das seguintes equações diferenciais lineares.
-
-  \begin{enumerate}
+  % \item (Desafio) $y' - ry = 0$
   \item $y' - 2y = 1$
   \item $y' - 10y = 2$
-  \item $y' + y + 1 = 0$
-  \item $y' + 1 = y$
+  % \item $y' + y + 1 = 0$
+  % \item $y' + 1 = y$
   \item $2y' + 2y -1 = 0$
   \item $3y'- 4y +5 = 0$
   \item $\frac{1}{2} y' + \frac{1}{3} y + \frac{1}{4} = 0$
-  \item $y' -ry = a$ (Sugestão: $ry+a = r(y+\frac{a}{r})$)
+  \item $y' = \sqrt{3}y$
+  \item $y' -2\pi y =0$
+  \item $xy' = y$
+  \item $y' = 2xy$
+  \item $y' = y\cos x$
+  \item $y' - y\ln x = 0$
+  \item $y' -ry = a$, onde $r$ e $a$ são constantes
+
+% Sugestão: $ry+a = r\left(y+\frac{a}{r}\right)$
   \end{enumerate}
 
-\item (Desafio) As seguintes equações diferenciais não-lineares podem
-  ser resolvidas utilizando a mesma técnica dos exercícios
-  anteriores. Encontre as soluções das equações abaixo.
-
+\item EDOs separáveis não-lineares
   \begin{enumerate}
-  \item $2y'y = 1$
-  \item $y' = \frac{x}{y}$
   \item $y' = y^2$
+  \item $2y'y = 1$
+  \item $y' = \frac{1}{y}$
+  \item $y' = \frac{x}{y}$
+  \item $y' = x^2y$
+  \item $y' = xy^2$
+  \item $y' = (xy)^2$
+  \item $y' = \frac{1}{xy}$
   \end{enumerate}
+
 \end{enumerate}
 
 \end{document}
