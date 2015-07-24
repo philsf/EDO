@@ -245,4 +245,107 @@ Equação: $y' + y =-1$
 
 \end{multicols}
 
+Por que foi necessário arrumar a última equação daquela forma, antes
+de começar a resolvê-la? Vamos ver esse truque na próxima equação, com
+duas resoluções diferentes.
+
+{\bf Equação:}
+$y' - 2y = 6$
+
+\begin{multicols}{2}
+{\bf Modo 1}
+
+\smallskip
+
+$\frac{\ud y}{\ud x} = 2y + 6$ (arrumando)
+
+\smallskip
+
+$\frac{\ud y}{2y+6} = 1\ud x$ (separando)
+
+\smallskip
+Precisamos da substituição:
+
+$u = 2y+6$
+
+\smallskip
+
+$\ud u=2\ud x \Rightarrow \ud x = \frac{\ud u}{2}$
+
+\smallskip
+
+$\int \frac{1}{u} \frac{\ud u}{2} = \int 1 \ud x = \frac{1}{2}\int
+\frac{\ud u}{u} = \int \ud x$
+
+\smallskip
+
+$\int \frac{\ud u}{u} = 2\int \ud x$
+
+\smallskip
+
+$\ln (u) = 2x+c$ (integrando)
+
+\smallskip
+
+Voltando para $y$, temos:
+
+\smallskip
+
+$\ln(2y+6)= 2x+c$
+
+\smallskip
+
+$2y+6 = e^{2x+c}=e^{2x}e^c$ (exponencial)
+
+\smallskip
+
+$2y+6=K_1e^{2x}$ (a constante $K_1 = e^c$)
+
+\smallskip
+
+$2y=K_1e^{2x} -6$
+
+\smallskip
+
+Dividindo por 2 e chamando $K = \frac{K_1}{2}$
+
+\smallskip
+
+$y=\frac{K_1}{2}e^{2x} -3 \Rightarrow y=Ke^{2x}-3$
+
+\smallskip
+
+(Ufa!)
+
+\columnbreak
+{\bf Modo 2}
+
+\smallskip
+
+$\frac{\ud y}{\ud x} = 2y + 6 = 2(y+3)$ (arrumando)
+
+\smallskip
+
+$\frac{\ud y}{y+3} = 2\ud x$ (separando)
+
+\smallskip
+
+$\ln (y+3) = 2x+c$ (integrando)
+
+\smallskip
+
+$y+3 = e^{2x+c} = e^{2x}e^c$ (exponencial)
+
+\smallskip
+
+$y +3 = Ke^{2x}$ (constante)
+\smallskip
+
+$y = Ke^{2x} - 3$ (resposta)
+\end{multicols}
+
+
+\bigskip
+Conclusão: Os dois modos são igualmente válidos. Qual você prefere?
+
 \end{document}
