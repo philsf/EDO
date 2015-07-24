@@ -128,5 +128,38 @@ $x^2 + y^2 = K$. Como encontrar essa solução?
 
 \subsection{Equações Separáveis}
 
+\subsubsection{Exemplos}
+
+{\bf Primeiro exemplo:}
+Equação: $\frac{\ud y}{\ud x} - y = 0$
+
+{\bf Resolução:}
+\begin{multicols}{2}
+Arrumando a equação, temos:
+
+$$\frac{\ud y}{\ud x} = y$$
+
+$$\frac{\ud y}{y} = \ud x$$
+
+Integrando o lado esquerdo para $y$ e o lado direito para $x$ temos:
+
+$$\int \frac{\ud y}{y} = \int \ud x \Rightarrow \ln y = x+c$$
+
+Aplicando a exponencial para eliminar o logaritmo:
+
+$$y = e^{x+c}$$
+
+Pela propriedade da exponencial:
+
+$$y = e^xe^c$$
+
+Como $e^c$ é uma constante, vamos renomeá-la de $K$:
+
+$$y=Ke^x$$
+
+Que é a {\em família de soluções} da equação. Qualquer valor de $K$ dá
+uma função diferente que também é solução da equação.
+\end{multicols}
+
 
 \end{document}
