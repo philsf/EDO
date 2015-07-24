@@ -128,41 +128,70 @@ $x^2 + y^2 = K$. Como encontrar essa solução?
 
 \subsection{Equações Separáveis}
 
-\subsubsection{Exemplos}
-
 {\bf Primeiro exemplo:}
 Equação: $\frac{\ud y}{\ud x} - y = 0$
 
-{\bf Resolução:}
 \begin{multicols}{2}
+{\bf Resolução:}
+
 Arrumando a equação, temos:
 
-$$\frac{\ud y}{\ud x} = y$$
+\smallskip
+
+$\frac{\ud y}{\ud x} = y$
+
+\smallskip
 
 Separando as variáveis, temos:
 
-$$\frac{\ud y}{y} = 1 \ud x$$
+$\frac{\ud y}{y} = 1 \ud x$
+
+\smallskip
 
 Integrando o lado esquerdo para $y$ e o lado direito para $x$ temos:
 
-$$\int \frac{\ud y}{y} = \int \ud x \Rightarrow \ln y = x+c$$
+$\int \frac{\ud y}{y} = \int \ud x \Rightarrow \ln y = x+c$
+
+\smallskip
 
 Aplicando a exponencial para eliminar o logaritmo:
 
-$$y = e^{x+c}$$
+$y = e^{x+c}$
+
+\smallskip
 
 Pela propriedade da exponencial:
 
-$$y = e^xe^c$$
+$y = e^xe^c$
+
+\smallskip
 
 Como $e^c$ é uma constante, vamos renomeá-la de $K$:
 
-$$y=Ke^x$$
+$y=Ke^x$
+
+\smallskip
 
 Que é a {\em família de soluções} da equação. Qualquer valor de $K$ dá
 uma função diferente que também é solução da equação.
 \end{multicols}
 
+% Observe que as equações $\frac{\ud y}{\ud x} -y = x$ e $\frac{\ud
+%   y}{\ud x} = xy + x$ {\bf não são} separáveis.
+Observe que as equações $y' -y = x$ e $y' = xy + x$ {\bf não são}
+separáveis.
+
+\smallskip
+
+Uma equação é separável se você puder escrevê-la como $y' = f(x)g(y)$
+(produto!).
+
+\smallskip
+
+No primeiro exemplo, podemos chamar $f(x)=1$ (função constante, não
+varia com $x$) e $g(y)=y$, portanto $y'=1y$ é separável.
+
+\newpage
 {\bf Outros exemplos:}
 
 \begin{multicols}{2}
