@@ -2,7 +2,7 @@
 
 1. Introdução às EDOs
 2. EDOs de primeira ordem separáveis.
-3. PVI / Existência e Unicidade de soluções / Campos de direções
+3. PVI / Campos de direções
 4. Modelagem
 5. Modelagem (exercícios)
 6. EDOs lineares de segunda ordem (parte I)
