@@ -12,9 +12,8 @@
 10. EDOs lineares de segunda ordem (parte II)
 11. Séries Geométricas
 12. Séries de Taylor
-13. Séries de Taylor
-14. Séries de Fourier
-15. Aula de dúvidas
-16. P2
-17. Vista de provas
-18. P3
+13. Séries de Fourier
+14. Aula de dúvidas
+15. P2
+16. Vista de provas
+17. P3
