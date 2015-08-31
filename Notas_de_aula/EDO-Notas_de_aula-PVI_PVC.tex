@@ -116,6 +116,51 @@ Para resolver esse problema, precisamos de uma informação adicional!
 
 \subsection{Problema de Valor Inicial}
 
+A família de soluções de uma EDO tem uma constante que não pode ser
+determinada pelo método de resolução (que convencionamos chamar de
+$K$). Para cada valor de $K\in \mathbb{R}$ temos uma função diferente,
+e todas essas funções são soluções da EDO. Porém, cada função é
+solução de um único problema. Assim, para resolver um problema,
+precisamos encontrar o valor de $K$ que corresponde a ele.
+
+Para isto, precisamos de uma informação adicional, chamada de {\em
+  condição inicial} do problema. Vejamos alguns exemplos:
+
+{\bf Primeiro exemplo:}
+
+\begin{multicols}{2}
+  Resolver o PVI:
+    \begin{displaymath}
+    \left\{
+      \begin{array}{l}
+        y'=y+5\\
+        y(0)=1
+      \end{array}
+    \right.
+  \end{displaymath}
+
+{\bf Resolução:}
+
+Vimos na aula passada como aplicar o método de separação de variáveis
+nesta equação para encontrar a solução $y = Ke^t -5$. Só falta usar a
+condição inicial $y(0) = 1$ para encontrar o valor de $K$.
+
+Substituindo a condição inicial temos (para $t=0$):
+
+$y(0) = Ke^{0}-5$
+
+$1 = K - 5$
+
+$K = 1+5$
+
+$K=6$
+
+Substituindo esse valor de $K$ na família de soluções, encontramos a
+solução do PVI:
+
+$y = 6e^t-5$
+\end{multicols}
+
 
 \subsection{Problema de Valor de Contorno}
 
