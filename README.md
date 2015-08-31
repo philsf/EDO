@@ -15,3 +15,14 @@ A divulgação do material para os alunos é feita pelo endereço: https://sites
 * Séries Geométricas
 * Séries de Taylor
 * Séries de Fourier
+
+## Listas de exercícios e problemas
+
+* EDOs de primeira ordem separáveis - Gabarito
+* Problema de Valor Inicial (PVI) - Gabarito
+* Modelagem matemática com EDOs de primeira ordem  - Gabarito
+* EDOs de segunda ordem
+* Séries Geométricas
+* Séries de Taylor
+* Séries de Fourier
+
