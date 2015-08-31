@@ -24,7 +24,7 @@ A divulgação do material para os alunos é feita pelo endereço: https://sites
 * [EDOs de segunda ordem](https://docs.google.com/document/d/1-BmiUVAdVN5nerjWv8Py_ce-ctnKoDW8lAwk0wB5lTA/export?format=pdf)
 * [Séries Geométricas](https://docs.google.com/document/d/1SzDV6EnP5WM0Ysb1eURae9CrinNkMA0r0BomVyj8CFQ/export?format=pdf)
 * [Séries de Taylor](https://docs.google.com/document/d/1XzQs6j4Ad07F6rBgE0AOMT9aIAoSHnYt9xfN3jVWtV4/export?format=pdf)
-* [Séries de Fourier]
+* Séries de Fourier
 
 ## Licensa
 Todo o material contido aqui é distribuído sob a licensa [Creative Commons Atribuição](http://creativecommons.org/licenses/by/4.0/deed.pt_BR)
