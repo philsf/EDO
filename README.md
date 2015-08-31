@@ -8,7 +8,7 @@ A divulgação do material para os alunos é feita pelo endereço: https://sites
 
 * Introdução às EDOs
 * EDOs de primeira ordem separáveis.
-* Problema de Valor Inicial (PVI) e de Contorno (PVC)
+* Problemas de Valor Inicial (PVI) e de Contorno (PVC)
 * Modelagem matemática com EDOs de primeira ordem
 * EDOs lineares de segunda ordem (parte I)
 * EDOs lineares de segunda ordem (parte II)
