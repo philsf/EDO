@@ -1,0 +1,439 @@
+\everymath{\displaystyle}
+%\documentclass[pdftex,a4paper]{article}
+\documentclass[a4paper]{article}
+%%classes: article, report, book, proc, amsproc
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Misc
+% para acertar os acentos
+\usepackage[brazilian]{babel} 
+%\usepackage[portuguese]{babel} 
+% \usepackage[english]{babel}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+% \usepackage{graphicx} %See PDF section
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{20pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF support
+
+\usepackage[pdftex]{color,graphicx}
+% %% Hyper-refs
+\usepackage[pdftex]{hyperref} % for printing
+% \usepackage[pdftex,bookmarks,colorlinks]{hyperref} % for screen
+
+%% \newif\ifPDF
+%% \ifx\pdfoutput\undefined\PDFfalse
+%% \else\ifnum\pdfoutput > 0\PDFtrue
+%%      \else\PDFfalse
+%%      \fi
+%% \fi
+
+%% \ifPDF
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage{aeguill}
+%%   \usepackage[pdftex]{graphicx,color}
+%%   \usepackage[pdftex]{hyperref}
+%% \else
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage[dvips]{graphicx}
+%%   \usepackage[dvips]{hyperref}
+%% \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math
+\usepackage{amsmath,amsfonts,amssymb}
+% para usar R de Real do jeito que o povo gosta
+\usepackage{amsfonts} % \mathbb
+% para usar as letras frescas como L de Espaco das Transf Lineares
+% \usepackage{mathrsfs} % \mathscr
+
+% Oferecer seno e tangente em pt, com os comandos usuais.
+\providecommand{\sin}{} \renewcommand{\sin}{\hspace{2pt}\mathrm{sen}}
+\providecommand{\tan}{} \renewcommand{\tan}{\hspace{2pt}\mathrm{tg}}
+
+% dt of integrals = \ud t
+\newcommand{\ud}{\mathrm{\ d}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Título e cabeçalho
+%\noindent\parbox[c]{.15\textwidth}{\includegraphics[width=.15\textwidth]{logo}}\hfill
+\parbox[c]{.825\textwidth}{\raggedright%
+  \sffamily {\LARGE
+
+Equações Diferenciais: Notas de Aula
+
+Problemas de Valor Inicial (PVI) e de Contorno (PVC)
+
+\par\bigskip}
+{Prof: Felipe Figueiredo\par}
+{\url{http://sites.google.com/site/proffelipefigueiredo}\par}
+}
+
+Versão: \verb|20150831|
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos de aprendizagem}
+
+Ao final desta aula o aluno deve saber o que é um Problema de Valor
+Inicial (PVI) e um Problema de Valor de Contorno (PVC).
+
+
+\section{Pré-requitos da aula}
+
+\begin{itemize}
+\item Derivadas do seno e do cosseno
+\item Valores do seno e do cosseno em $0$ e $\frac{\pi}{2}$
+\end{itemize}
+
+\section{Conteúdo}
+
+O aluno deve consultar o livro texto nas seções 11.1 (PVI) e 11.10 (PVC)
+para se aprofundar no conteúdo desta aula.
+
+\subsection{Problema}
+
+Um carro acelera em uma rua reta de acordo com a equação
+$v'=\frac{1}{100}v$. Após $t=60$s, qual é a velocidade final do carro?
+
+Para resolver esse problema, precisamos de uma informação adicional!
+
+\subsection{Problema de Valor Inicial}
+
+A família de soluções de uma EDO tem uma constante que não pode ser
+determinada pelo método de resolução (que convencionamos chamar de
+$K$). Para cada valor de $K\in \mathbb{R}$ temos uma função diferente,
+e todas essas funções são soluções da EDO. Porém, cada função é
+solução de um único problema. Assim, para resolver um problema,
+precisamos encontrar o valor de $K$ que corresponde a ele.
+
+Para isto, precisamos de uma informação adicional, chamada de {\em
+  condição inicial} do problema. Vejamos alguns exemplos:
+
+{\bf Primeiro exemplo:}
+
+\begin{multicols}{2}
+  Resolver o PVI:
+    \begin{displaymath}
+    \left\{
+      \begin{array}{l}
+        y'=y+5\\
+        y(0)=1
+      \end{array}
+    \right.
+  \end{displaymath}
+
+{\bf Resolução:}
+
+Vimos na aula passada como aplicar o método de separação de variáveis
+nesta equação para encontrar a solução $y = Ke^t -5$. Só falta usar a
+condição inicial $y(0) = 1$ para encontrar o valor de $K$.
+
+Substituindo a condição inicial temos (para $t=0$):
+
+$y(0) = Ke^{0}-5$
+
+$1 = K - 5$
+
+$K = 1+5$
+
+$K=6$
+
+Substituindo esse valor de $K$ na família de soluções, encontramos a
+solução do PVI:
+
+$y = 6e^t-5$
+\end{multicols}
+
+\newpage
+\begin{multicols}{2}
+{\bf Exemplo}
+
+$
+\left\{
+  \begin{array}{l}
+    2y'-2y +1 =0\\
+    y(0)=\frac{5}{2}
+  \end{array}
+\right.
+$
+
+\bigskip
+{\bf Resolução:}
+
+$2y' = 2y - 1$
+
+$y' = y - \frac{1}{2}$
+
+\smallskip
+
+$\frac{\ud y}{y - \frac{1}{2}} = \ud t$
+
+\smallskip
+
+$\ln \left(y - \frac{1}{2} \right) = t + c$
+
+\smallskip
+
+$y - \frac{1}{2}= K e^t$
+
+\smallskip
+
+$y(t) = K e^t + \frac{1}{2}$
+
+\smallskip
+
+Agora, substituindo a condição inicial:
+
+\smallskip
+
+$y(0) = Ke^0 +\frac{1}{2}$
+
+\smallskip
+
+$\frac{5}{2} = K + \frac{1}{2}$
+
+\smallskip
+
+$K=\frac{5}{2}-\frac{1}{2} = \frac{4}{2}$
+
+\smallskip
+
+$K=2$
+
+Substituindo na solução, temos:
+
+$y(t) = 2e^t +\frac{1}{2}$
+
+%\columnbreak
+\hrulefill
+
+{\bf Exercício}
+
+$
+\left\{
+  \begin{array}{l}
+    y'=-5y\\
+    y(0)=2
+  \end{array}
+\right.
+$
+
+\bigskip
+{\bf Resolução:}
+
+$\frac{\ud y}{y} = -5 \ud t$
+
+$y(t) = Ke^{-5t}$
+
+Substituindo o tempo inicial:
+
+$y(0) = Ke^{-5 \times 0}$
+
+$2 = K \times 1 \Rightarrow K= 2$
+
+Substituindo $K$ na solução, temos:
+
+$y(t) = 2e^{-5t}$
+\end{multicols}
+
+\hrulefill
+
+\begin{multicols}{2}
+{\bf Exemplo:} (EDO não linear)
+
+$
+\left\{
+  \begin{array}{l}
+    2yy'=t+2\\
+    y(0)=2
+  \end{array}
+\right.
+$
+
+\bigskip
+{\bf Resolução:}
+
+$2\int y \ud y = \int (t+2) \ud t$
+
+$2\frac{y^2}{2} = t^2 + 2t + c$
+
+$y^2 = t^2 + 2t + c$
+
+$y = \pm \sqrt{t^2 + 2t +K}$
+
+Condição inicial:
+
+$y(0)=\pm \sqrt{0^2 + 2\times 0 +K}$
+
+$2 = \pm \sqrt{0 + 0 +K} = \pm \sqrt{K}$
+
+Para encontrar $K$, basta elevar ambos os lados ao quadrado:
+
+$2^2 = \left( \pm \sqrt{K} \right)^2$
+
+$4 = K \Rightarrow K=4$
+
+Substituindo $K$ para encontrar a solução:
+
+$y(t) = \pm \sqrt{t^2 + 2t +4}$
+\end{multicols}
+
+\hrulefill
+
+\subsection{Resolução do problema}
+
+Vamos agora voltar no problema do carro, e considerar o seguinte PVI:
+
+\begin{displaymath}
+  \left\{
+    \begin{array}{l}
+      v'=\frac{1}{100}v\\
+      v_0 = 20
+    \end{array}
+  \right.
+\end{displaymath}
+
+A família de soluções da EDO $v'=\frac{1}{100}v$ é
+
+\begin{displaymath}
+  v(t) = Ke^{(\frac{1}{100}t)}
+\end{displaymath}
+
+Substituindo o tempo inicial, temos:
+
+\begin{displaymath}
+  v(0) = Ke^{(\frac{1}{100}\times 0)}
+\end{displaymath}
+\begin{displaymath}
+  20 = K \times 1
+\end{displaymath}
+
+Portanto a solução do PVI para um $t$ qualquer:
+
+\begin{displaymath}
+  v(t) = 20e^{(\frac{1}{100}t)}
+\end{displaymath}
+
+Assim, para encontrarmos a velocidade após $t=60$s, basta substituir
+esse valor na solução:
+
+\begin{displaymath}
+  v(60) = 20e^{(\frac{1}{100}\times 60)} \approx 36\frac{m}{s}
+\end{displaymath}
+
+Esta velocidade é $\approx 130\frac{km}{h}$.
+
+Verifique em casa que se usarmos a velocidade inicial
+$v_0=10\frac{m}{s}$ encontramos a velocidade terminal
+$v(60) \approx 18\frac{m}{s} \approx 65\frac{km}{h}$
+
+\subsection{Problema de Valor de Contorno}
+
+Além de considerarmos o tempo inicial, podemos também resolver um
+problema com tempo inicial e tempo final. Esse tipo de problema
+aparece com EDOs de segunda ordem (derivada segunda).
+
+Como aquecimento, vamos começar com um exercício de verificação de
+solução de uma EDO de segunda ordem:
+
+%\begin{multicols}{2}
+{\bf Exercício:}
+
+Verifique que $y(t) = \sin (t)$ é uma solução de $y''+y=0$.
+
+\bigskip
+
+{\bf Resolução}
+
+%\bigskip
+
+Derivando a função $y(t)$ temos:
+
+$y' = \cos(t)$
+
+$y'' = -\sin(t)$
+
+Substituindo na EDO temos:
+
+$\left(-\sin(t)\right) + \left(\sin(t)\right) =0$
+
+$0=0$, portanto $y(t) = \sin(t)$ é uma solução da EDO.
+%\end{multicols}
+
+%\newpage
+
+Agora vamos ver como se resolve um PVC, com as condições no tempo
+inicial e no tempo final.
+
+{\bf PVC}
+\begin{displaymath}
+  \left\{
+    \begin{array}{l}
+      y'' + y=0\\
+      \smallskip
+      y(0)=3\\
+      \smallskip
+      y(\frac{\pi}{2})=2
+    \end{array}
+  \right.
+\end{displaymath}
+
+Enquanto não aprendermos a resolver a EDO de segunda ordem, considere
+a seguinte solução geral (verificar é um bom exercício para casa!):
+
+\begin{displaymath}
+  y(t) = K_1\sin(t) + K_2\cos(t)
+\end{displaymath}
+
+Observe que agora temos duas constantes $K_1$ e $K_2$, por isso
+precisamos de duas condições de contorno.
+
+Vamos começar substituindo o tempo inicial $t=0$:
+
+\begin{displaymath}
+  y(0)= K_1\cos(0) + K_2\sin(0)
+\end{displaymath}
+\begin{displaymath}
+  3 = K_1 \times 1 + K_2 \times 0
+\end{displaymath}
+\begin{displaymath}
+  3=K_1 \Rightarrow K_1=3
+\end{displaymath}
+
+Agora o tempo final $t=\frac{\pi}{2}$
+
+\begin{displaymath}
+  y(\frac{\pi}{2}) = K_1 \cos(\frac{\pi}{2}) + K_2\sin(\frac{\pi}{2})
+\end{displaymath}
+\begin{displaymath}
+  2 = K_1 \times 0 + K_2\times 1
+\end{displaymath}
+\begin{displaymath}
+  2 = K_2 \Rightarrow K_2=2
+\end{displaymath}
+
+Assim, substituindo as duas constantes $K_1$ e $K_2$ na função $y(t)$,
+encontramos a solução do PVC:
+
+\begin{displaymath}
+  y(t) = 2\cos(t) + 3\sin(t)
+\end{displaymath}
+
+\end{document}
