@@ -330,9 +330,63 @@ $\left(-\sin(t)\right) + \left(\sin(t)\right) =0$
 $0=0$, portanto $y(t) = \sin(t)$ é uma solução da EDO.
 %\end{multicols}
 
+\newpage
 
+Agora vamos ver como se resolve um PVC, com as condições no tempo
+inicial e no tempo final.
 
+{\bf PVC}
+\begin{displaymath}
+  \left\{
+    \begin{array}{l}
+      y'' + y=0\\
+      \smallskip
+      y(0)=3\\
+      \smallskip
+      y(\frac{\pi}{2})=2
+    \end{array}
+  \right.
+\end{displaymath}
 
+Enquanto não aprendermos a resolver a EDO de segunda ordem, considere
+a seguinte solução geral (verificar é um bom exercício para casa!):
 
+\begin{displaymath}
+  y(t) = K_1\sin(t) + K_2\cos(t)
+\end{displaymath}
+
+Observe que agora temos duas constantes $K_1$ e $K_2$, por isso
+precisamos de duas condições de contorno.
+
+Vamos começar substituindo o tempo inicial $t=0$:
+
+\begin{displaymath}
+  y(0)= K_1\sin(0) + K_2\cos(0)
+\end{displaymath}
+\begin{displaymath}
+  3 = K_1 \times 0 + K_2 \times 1
+\end{displaymath}
+\begin{displaymath}
+  3=K_2 \Rightarrow K_2=3
+\end{displaymath}
+
+Agora o tempo final $t=\frac{\pi}{2}$
+
+\begin{displaymath}
+  y(\frac{\pi}{2}) = K_1 \sin(\frac{\pi}{2}) + K_2\cos(\frac{\pi}{2})
+\end{displaymath}
+\begin{displaymath}
+  2 = K_1 \times 1 + K_2\times 0
+\end{displaymath}
+\begin{displaymath}
+  2 = K_1 \Rightarrow K_1=2
+\end{displaymath}
+
+Assim, substituindo as duas constantes $K_1$ e $K_2$ na função $y(t)$,
+encontramos a solução do PVC:
+
+\begin{displaymath}
+  y(t) = 2\sin(t) + 3\cos(t)
+\end{displaymath}
 
 \end{document}
