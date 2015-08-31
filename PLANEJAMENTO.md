@@ -2,7 +2,7 @@
 
 * Introdução às EDOs
 * EDOs de primeira ordem separáveis.
-* PVI / Campos de direções
+* PVI / PVC
 * Modelagem
 * EDOs lineares de segunda ordem (parte I)
 * EDOs lineares de segunda ordem (parte II)
