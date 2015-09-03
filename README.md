@@ -8,7 +8,7 @@ A divulgação do material para os alunos é feita pelo endereço: https://sites
 
 * [Introdução às EDOs](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-intro.pdf)
 * [EDOs de primeira ordem separáveis](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-1ordem_separaveis.pdf)
-* Problemas de Valor Inicial (PVI) e de Contorno (PVC)
+* [Problemas de Valor Inicial (PVI) e de Contorno (PVC)](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-PVI_PVC.pdf)
 * Modelagem matemática com EDOs de primeira ordem
 * EDOs lineares de segunda ordem (parte I)
 * EDOs lineares de segunda ordem (parte II)
