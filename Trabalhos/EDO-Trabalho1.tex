@@ -1,0 +1,163 @@
+\everymath{\displaystyle}
+%\documentclass[pdftex,a4paper]{article}
+\documentclass[a4paper]{article}
+%%classes: article, report, book, proc, amsproc
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Misc
+% para acertar os acentos
+\usepackage[brazilian]{babel} 
+%\usepackage[portuguese]{babel} 
+% \usepackage[english]{babel}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+% \usepackage{graphicx} %See PDF section
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{20pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF support
+
+\usepackage[pdftex]{color,graphicx}
+% %% Hyper-refs
+\usepackage[pdftex]{hyperref} % for printing
+% \usepackage[pdftex,bookmarks,colorlinks]{hyperref} % for screen
+
+%% \newif\ifPDF
+%% \ifx\pdfoutput\undefined\PDFfalse
+%% \else\ifnum\pdfoutput > 0\PDFtrue
+%%      \else\PDFfalse
+%%      \fi
+%% \fi
+
+%% \ifPDF
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage{aeguill}
+%%   \usepackage[pdftex]{graphicx,color}
+%%   \usepackage[pdftex]{hyperref}
+%% \else
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage[dvips]{graphicx}
+%%   \usepackage[dvips]{hyperref}
+%% \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math
+\usepackage{amsmath,amsfonts,amssymb}
+% para usar R de Real do jeito que o povo gosta
+\usepackage{amsfonts} % \mathbb
+% para usar as letras frescas como L de Espaco das Transf Lineares
+% \usepackage{mathrsfs} % \mathscr
+
+% Oferecer seno e tangente em pt, com os comandos usuais.
+\providecommand{\sin}{} \renewcommand{\sin}{\hspace{2pt}\mathrm{sen}}
+\providecommand{\tan}{} \renewcommand{\tan}{\hspace{2pt}\mathrm{tg}}
+
+% dt of integrals = \ud t
+\newcommand{\ud}{\mathrm{\ d}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\date{
+\bigskip
+Curso: \underline{\hspace{8cm}}\\
+\ \\
+Turma: \underline{\hspace{1cm}} Série: \underline{\hspace{1cm}} Turno:
+\underline{\hspace{1cm}}\\
+\ \\
+Prof: \underline{\hspace{8cm}}\\
+}
+
+\title{Equações Diferenciais - Trabalho 1}
+
+\author{
+{\bf Grupo}\\
+\ \\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+Nome: \underline{\hspace{6cm}} RA: \underline{\hspace{2cm}} Assinatura: \underline{\hspace{4cm}}\\
+}
+
+% {Aluno(a): \underline{\hspace{8.5cm}} RA: \underline{\hspace{2.3cm}}\par}
+% {Curso: \underline{\hspace{8.95cm}} Data: \underline{\hspace{2cm}}\par}
+% {Turma: \underline{\hspace{2cm}} Série: \underline{\hspace{2cm}}
+%   Turno: \underline{\hspace{2.5cm}} Prova A\par}
+% {Prof: \underline{\hspace{9.15cm}} Nota: \underline{\hspace{2cm}}\par}
+
+\begin{document}
+\maketitle
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Título e cabeçalho
+%\noindent\parbox[c]{.15\textwidth}{\includegraphics[width=.15\textwidth]{logo}}\hfill
+\parbox[c]{.825\textwidth}{\raggedright%
+  \sffamily {\LARGE
+
+Equações Diferenciais: Trabalho 1
+
+\par\bigskip}
+{Prof: Felipe Figueiredo\par}
+{\url{http://sites.google.com/site/proffelipefigueiredo}\par}
+}
+
+Versão: \verb|20150820|
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Valor}
+Este trabalho valerá $2.0$pts na composição da nota da P1. Cada 4
+questões resolvidas corretamente e com resolução completa pontuam em
+$0.5$pt.
+
+\section{Entrega}
+
+Todas resoluções devem ser feitas a lápis, e as respostas a caneta
+(azul ou preta). Todas as pessoas do grupo devem assinar a capa do
+trabalho.
+
+O(a) representante de turma, ou alguém apontado por ele(a), deverá
+juntar todos os trabalhos da turma. O trabalho 1 será recolhida na
+aula da semana determinada no endereço:
+
+\url{https://sites.google.com/site/proffelipefigueiredo/anhanguera/2015-2}.
+
+\section{Conteúdo}
+
+O grupo deve consultar no PLT da disciplina os enunciados dos
+seguintes exercícios e problemas abaixo:
+
+\begin{enumerate}
+\item Seção 11.4  (pp405) exercícios 18, 20, 22 e 24.
+\item Seção 11.4  (pp405) problemas 30 e 32.
+\item Seção 11.6  (pp417) problemas 2, 4, 12, 18 e 20.
+\item Seção 11.11 (pp447) exercícios 14, 16, 18, 22 e 24.
+\end{enumerate}
+
+\section{Observações}
+
+\begin{itemize}
+\item A assinatura de cada aluno na capa do trabalho é
+  obrigatória. Alunos que não assinarem o trabalho, não receberão os
+  pontos dessa atividade.
+\item Cada questão deve ter resolução completa, ou não será
+  considerada.
+\item As folhas com as questões resolvidas devem ser grampeadas junto
+  com a capa do trabalho.
+\end{itemize}
+
+\end{document}
