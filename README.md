@@ -26,6 +26,11 @@ A divulgação do material para os alunos é feita pelo endereço: https://sites
 * [Séries de Taylor](https://docs.google.com/document/d/1XzQs6j4Ad07F6rBgE0AOMT9aIAoSHnYt9xfN3jVWtV4/export?format=pdf)
 * Séries de Fourier
 
+## Trabalhos
+
+* [Trabalho 1](https://github.com/philsf/EDO/raw/master/Trabalhos/EDO-Trabalho1.pdf)
+* Trabalho 2
+
 ## Licensa
 Todo o material contido aqui é distribuído sob a licensa [Creative Commons Atribuição](http://creativecommons.org/licenses/by/4.0/deed.pt_BR)
 
