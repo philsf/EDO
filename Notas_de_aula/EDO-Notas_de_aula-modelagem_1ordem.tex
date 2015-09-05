@@ -145,9 +145,84 @@ substituindo esses valores na equação acima.
 {\bf Exemplos}: Duas pessoas estão em um restaurante, onde a
 temperatura ambiente é $T_a=25^o$C. Uma delas pede um café, com
 temperatura inicial $90^o$C, e a outra pede um chope com temperatura
-inicial $6^o$C. Qual é a função $T(t)$ que determina como a temperatura de
-cada um desses objetos varia com o tempo?
+inicial $6^o$C. Qual é a função $T(t)$ que determina como a
+temperatura de cada um desses objetos varia com o tempo? Considere que
+a taxa de transferência nesse local de temperatura é $\alpha=1\%$.
 
+{\bf Resoluções:}
+
+Substituindo os valores $\lambda=1$ e $T_a=25$, temos a equação
+$T'=-\frac{1}{100}(T-25)$. Para cada uma das temperaturas iniciais $T(0)$ acima,
+temos um PVI, conforme abaixo.
+
+Como vimos nas aulas anteriores, a família de soluções da equação
+$T'=-\frac{1}{100}(T-25)$ é: $T(t)=Ke^{-t/100}+25$ (você pode chegar
+nessa resposta usando separação de variáveis).
+
+Assim, a solução específica de cada PVI é:
+
+\begin{multicols}{2}
+PVI café:  $\left\{
+    \begin{array}{l}
+      T'=-\frac{1}{100}(T-25)\\
+      \\
+      T(0)=90
+    \end{array}
+  \right.$
+
+$T(t)=Ke^{-t/100}+25$
+
+$T(0)=Ke^{0}+25$
+
+$90=K+25$
+
+$K= 90 - 25$
+
+$K=65$
+
+$T(t)=65e^{-t/100}+25$
+
+\columnbreak
+
+PVI chope:  $\left\{
+    \begin{array}{l}
+      T'=-\frac{1}{100}(T-25)\\
+      \\
+      T(0)=6
+    \end{array}
+  \right.$
+
+$T(t)=Ke^{-t/100}+25$
+
+$T(0)=Ke^{0}+25$
+
+$6=K+25$
+
+$K= 6 - 25$
+
+$K=-19$
+
+$T(t)=-19e^{-t/100}+25$
+
+\end{multicols}
+
+Qual vai ser a temperatura de cada um após 1 minuto ($t=60$s?)
+
+Café após $60$s: $T(60)=65e^{-60/100}+25$
+
+Chope após $60$s: $T(60)=-19e^{-60/100}+25$
+
+Como somos todos curiosos, podemos usar uma calculadora qual é o valor numérico dessa
+expressão (mas apenas em casa ou na aula, não na prova!):
+
+Café após $60$s: $T(60)\approx 60.7^o$C
+
+Chope após $60$s: $T(60)\approx 14.6^o$C
+
+\hrulefill
+
+{\bf Desafio:} Qual é o limite dessas duas funções quando
+$t\rightarrow \infty$? O que você pode concluir desse resultado?
 
 \subsection{Meia vida: decaimento radioativo}
 
