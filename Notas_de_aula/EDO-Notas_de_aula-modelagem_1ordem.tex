@@ -107,128 +107,6 @@ O aluno deve consultar o livro texto na seção X.Y para se aprofundar
 no conteúdo desta aula.
 
 
-\subsection{Resistência do ar}
-
-Como funciona um pára-quedas?
-
-Um corpo em queda livre tem sua velocidade acelerada pela força da
-gravidade. Assim, a força que atua no corpo, para baixo é $F_g=mg$, onde
-$m$ é a massa e $g$ é a aceleração da gravidade, que assumiremos
-constante por simplicidade.
-
-O pára-quedas tem a função de diminuir ou cancelar essa aceleração,
-atuando na direção oposta (a força atua para cima). Ele cria uma
-enorme resistência do ar que é {\rm proporcional} à velocidade
-atual. Assim, a força gerada pelo pára-quedas pode ser escrita como
-$F_p=\alpha v$. Isso implica que, quanto maior for a velocidade, maior
-será também a resistência do ar (diretamente proporcionais).
-
-A resultante dessas duas forças é a diferença entre ambas, isto é
-$F=F_g-F_p$. Pela segunda lei de Newton essa força resultante é
-$F=m v'$, onde $v'$ é a aceleração. Juntando tudo em uma única
-equação, temos:
-
-\begin{displaymath}
-  m v' = mg - \alpha v
-\end{displaymath}
-
-Simplificando, isto é, dividindo por $m$, temos:
-
-\begin{displaymath}
-  v' = g - \frac{\alpha}{m} v
-\end{displaymath}
-
-Podemos colocar o coeficiente de $v$ em evidência, no lado direito da
-igualdade, dividindo ambos os termos por ele:
-
-\begin{displaymath}
-  v' = g - \frac{\alpha}{m} v = - \frac{\alpha}{m} v +g
-\end{displaymath}
-
-\begin{displaymath}
-  v' =  -\frac{\alpha}{m} ( v - \frac{mg}{\alpha})
-\end{displaymath}
-
-Agora, com o coeficiente de $v$ do lado direito em evidência, fica um
-pouco mais fácil para separar as variáveis e resolver a equação.
-
-{\bf Exemplo:}
-
-Josefina salta de um avião e abre o pára-quedas imediatamente. Sua
-velocidade inicial é $v_0=0$. Jô pesa $50kg$ e digamos que o
-coeficiente de arrasto do ar nesse local é $\alpha = 50$. Assumindo
-que a gravidade é $g=10\frac{m}{s^2}$, qual será a velocidade de Jô
-após os primeiros $2s$ de pura adrenalina?
-
-{\bf Resolução:}
-
-Substituindo as informações do enunciado temos:
-
-\begin{displaymath}
-  v' =  -\frac{50}{50} ( v - \frac{50 \times 10}{50}) = - (v - 10)
-\end{displaymath}
-
-Agora já podemos resolver o:
-
-PVI pára-quedas: $\left\{
-    \begin{array}{l}
-      v' = - (v - 10)
-      \\
-      \\
-      v(0)=0
-    \end{array}
-  \right.$
-
-A família de soluções da EDO é $v(t)=K e^{-t}+10$. Substituindo a
-velocidade inicial, encontramos o valor de $K$:
-
-$v(0) = K e^0 +10$
-
-$0 = K+10$
-
-$K=-10$
-
-E a solução desse PVI é:
-
-\begin{displaymath}
-  v(t) = -10e^{-t}+10
-\end{displaymath}
-
-Com essa função, podemos saber a velocidade Jô em qualquer instante de
-tempo. Como queremos saber a velocidade depois de $2s$, basta
-substituir $t=2$ e encontrar a resposta procurada:
-
-\begin{displaymath}
-  v(2)=-10 e^{-2}+10
-\end{displaymath}
-
-Como curiosidade, podemos efeturar essa resposta na calculadora e
-encontrar um valor numérico aproximado de
-$8.6\frac{m}{s} \approx 31\frac{km}{h}$.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=.9\textwidth]{pqd}
-  \caption{Gráfico da velocidade da Jô no tempo}
-  \label{fig:PQD}
-\end{figure}
-
-\hrulefill
-
-{\bf Desafio 1:} Qual seria a velocidade de Jô depois de $2s$ se ela
-não tivesse um pára-quedas? (O que muda no problema?)
-
-\hrulefill
-
-{\bf Desafio 2:} Como a resistência do ar aumenta com a velocidade
-causada pela gravidade, em algum momento as duas forças $F_g$ e $F_p$
-se igualam e se cancelam, e nesse momento Jô passa a cair com
-velocidade constante (força resultante nula $\Rightarrow$ aceleração
-nula $\Rightarrow v'=0$). Qual é essa velocidade terminal?
-
-O gráfico na figura \ref{fig:PQD} mostra a velocidade terminal.
-
-
 \subsection{Lei de Newton do Resfriamento (ou Aquecimento)}
 
 Como exatamente uma tulipa de cerveja esquenta, ou uma xícara de café
@@ -350,6 +228,128 @@ Veja os gráficos das duas funções na figura \ref{fig:LNR}
 
 {\bf Desafio:} Qual é o limite dessas duas funções quando
 $t\rightarrow \infty$? O que você pode concluir desse resultado?
+
+\subsection{Resistência do ar}
+
+Como funciona um pára-quedas?
+
+Um corpo em queda livre tem sua velocidade acelerada pela força da
+gravidade. Assim, a força que atua no corpo, para baixo é $F_g=mg$, onde
+$m$ é a massa e $g$ é a aceleração da gravidade, que assumiremos
+constante por simplicidade.
+
+O pára-quedas tem a função de diminuir ou cancelar essa aceleração,
+atuando na direção oposta (a força atua para cima). Ele cria uma
+enorme resistência do ar que é {\rm proporcional} à velocidade
+atual. Assim, a força gerada pelo pára-quedas pode ser escrita como
+$F_p=\alpha v$. Isso implica que, quanto maior for a velocidade, maior
+será também a resistência do ar (diretamente proporcionais).
+
+A resultante dessas duas forças é a diferença entre ambas, isto é
+$F=F_g-F_p$. Pela segunda lei de Newton essa força resultante é
+$F=m v'$, onde $v'$ é a aceleração. Juntando tudo em uma única
+equação, temos:
+
+\begin{displaymath}
+  m v' = mg - \alpha v
+\end{displaymath}
+
+Simplificando, isto é, dividindo por $m$, temos:
+
+\begin{displaymath}
+  v' = g - \frac{\alpha}{m} v
+\end{displaymath}
+
+Podemos colocar o coeficiente de $v$ em evidência, no lado direito da
+igualdade, dividindo ambos os termos por ele:
+
+\begin{displaymath}
+  v' = g - \frac{\alpha}{m} v = - \frac{\alpha}{m} v +g
+\end{displaymath}
+
+\begin{displaymath}
+  v' =  -\frac{\alpha}{m} ( v - \frac{mg}{\alpha})
+\end{displaymath}
+
+Agora, com o coeficiente de $v$ do lado direito em evidência, fica um
+pouco mais fácil para separar as variáveis e resolver a equação.
+
+{\bf Exemplo:}
+
+Josefina salta de um avião e abre o pára-quedas imediatamente. Sua
+velocidade inicial é $v_0=0$. Jô pesa $50kg$ e digamos que o
+coeficiente de arrasto do ar nesse local é $\alpha = 50$. Assumindo
+que a gravidade é $g=10\frac{m}{s^2}$, qual será a velocidade de Jô
+após os primeiros $2s$ de pura adrenalina?
+
+{\bf Resolução:}
+
+Substituindo as informações do enunciado temos:
+
+\begin{displaymath}
+  v' =  -\frac{50}{50} ( v - \frac{50 \times 10}{50}) = - (v - 10)
+\end{displaymath}
+
+Agora já podemos resolver o:
+
+PVI pára-quedas: $\left\{
+    \begin{array}{l}
+      v' = - (v - 10)
+      \\
+      \\
+      v(0)=0
+    \end{array}
+  \right.$
+
+A família de soluções da EDO é $v(t)=K e^{-t}+10$. Substituindo a
+velocidade inicial, encontramos o valor de $K$:
+
+$v(0) = K e^0 +10$
+
+$0 = K+10$
+
+$K=-10$
+
+E a solução desse PVI é:
+
+\begin{displaymath}
+  v(t) = -10e^{-t}+10
+\end{displaymath}
+
+Com essa função, podemos saber a velocidade Jô em qualquer instante de
+tempo. Como queremos saber a velocidade depois de $2s$, basta
+substituir $t=2$ e encontrar a resposta procurada:
+
+\begin{displaymath}
+  v(2)=-10 e^{-2}+10
+\end{displaymath}
+
+Como curiosidade, podemos efeturar essa resposta na calculadora e
+encontrar um valor numérico aproximado de
+$8.6\frac{m}{s} \approx 31\frac{km}{h}$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.9\textwidth]{pqd}
+  \caption{Gráfico da velocidade da Jô no tempo}
+  \label{fig:PQD}
+\end{figure}
+
+\hrulefill
+
+{\bf Desafio 1:} Qual seria a velocidade de Jô depois de $2s$ se ela
+não tivesse um pára-quedas? (O que muda no problema?)
+
+\hrulefill
+
+{\bf Desafio 2:} Como a resistência do ar aumenta com a velocidade
+causada pela gravidade, em algum momento as duas forças $F_g$ e $F_p$
+se igualam e se cancelam, e nesse momento Jô passa a cair com
+velocidade constante (força resultante nula $\Rightarrow$ aceleração
+nula $\Rightarrow v'=0$). Qual é essa velocidade terminal?
+
+O gráfico na figura \ref{fig:PQD} mostra a velocidade terminal.
+
 
 \subsection{Tempo de meia vida}
 
