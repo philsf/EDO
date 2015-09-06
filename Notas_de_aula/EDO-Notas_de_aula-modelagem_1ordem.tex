@@ -359,5 +359,49 @@ O gráfico na figura \ref{fig:PQD} mostra a velocidade terminal.
 \item $-\ln(2) = \ln(2^{-1}) = \ln (\frac{1}{2})$
 \end{itemize}
 
+\subsubsection{A meia vida}
+
+\begin{displaymath}
+  C' = -\alpha C
+\end{displaymath}
+
+\begin{displaymath}
+  C(t) = Ke^{-\alpha t} = C_0 e^{-\alpha t}
+\end{displaymath}
+
+Tempo de meia vida: $t_m$, o tempo necessário para observar a metade
+de $C_0$
+\begin{displaymath}
+  C(t_m) = C_0 e^{-\alpha t_m}
+\end{displaymath}
+
+\begin{displaymath}
+  C(t_m) = \frac{C_0}{2}
+\end{displaymath}
+
+\begin{displaymath}
+  C_0 e^{-\alpha t_m} = \frac{C_0}{2}
+\end{displaymath}
+
+Cortando $C_0$:
+
+\begin{displaymath}
+  e^{-\alpha t_m} = \frac{1}{2}
+\end{displaymath}
+
+Aplicando o logaritmo em ambos os lados, temos:
+
+\begin{displaymath}
+  \ln( e^{-\alpha t_m} ) = \ln( \frac{1}{2} ) = \ln ( 2^{-1} )
+\end{displaymath}
+
+\begin{displaymath}
+  -\alpha t_m =  - \ln ( 2 )
+\end{displaymath}
+
+Cancelando o sinal e dividindo por $t_m$:
+\begin{displaymath}
+  \alpha = \frac{\ln(2)}{t_m}
+\end{displaymath}
 
 \end{document}
