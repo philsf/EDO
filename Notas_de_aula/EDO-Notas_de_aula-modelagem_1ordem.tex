@@ -156,58 +156,57 @@ pouco mais fácil para separar as variáveis e resolver a equação.
 
 Josefina salta de um avião e abre o pára-quedas imediatamente. Sua
 velocidade inicial é $v_0=0$. Jô pesa $50kg$ e digamos que o
-coeficiente de arrasto do ar nesse local é $\alpha = 5$. Assumindo
+coeficiente de arrasto do ar nesse local é $\alpha = 50$. Assumindo
 que a gravidade é $g=10\frac{m}{s^2}$, qual será a velocidade de Jô
-após $t=10s$ de pura adrenalina?
+após os primeiros $2s$ de pura adrenalina?
 
 {\bf Resolução:}
 
 Substituindo as informações do enunciado temos:
 
 \begin{displaymath}
-  v' =  -\frac{5}{50} ( v - \frac{50 \times 10}{5}) = -\frac{1}{10}(v - 100)
+  v' =  -\frac{50}{50} ( v - \frac{50 \times 10}{50}) = - (v - 10)
 \end{displaymath}
 
 Agora já podemos resolver o:
 
 PVI pára-quedas: $\left\{
     \begin{array}{l}
-      v' = -\frac{1}{10}(v - 100)
+      v' = - (v - 10)
       \\
       \\
       v(0)=0
     \end{array}
   \right.$
 
-A família de soluções da EDO é $v(t)=K e^{-1/10t}+100$. Substituindo a
+A família de soluções da EDO é $v(t)=K e^{-t}+10$. Substituindo a
 velocidade inicial, encontramos o valor de $K$:
 
-$v(0) = K e^o +100$
+$v(0) = K e^0 +10$
 
-$0 = K+100$
+$0 = K+10$
 
-$K=-100$
+$K=-10$
 
 E a solução desse PVI é:
 
-$v(t) = -100e^{-1/10t}+100$
+$v(t) = -10e^{-t}+10$
 
 Com essa função, podemos saber a velocidade Jô em qualquer instante de
-tempo. Como queremos saber a velocidade depois de $10s$, basta
-substituir $t=10$ e encontrar:
+tempo. Como queremos saber a velocidade depois de $2s$, basta
+substituir $t=2$ e encontrar:
 
-$v(10)=-100 e^{-1}+100$
+$v(2)=-10 e^{-2}+10$
 
 que é a resposta procurada.
 
 Como curiosidade, podemos efeturar essa resposta na calculadora e
-encontrar um valor numérico aproximado de $63\frac{m}{s}$ . É uma
-velocidade considerável para apenas $10s$ de queda! Jô deveria ter
-usado um pára-quedas maior \ldots
+encontrar um valor numérico aproximado de
+$8.6\frac{m}{s} \approx 31\frac{km}{h}$.
 
 \hrulefill
 
-{\bf Desafio 1:} Qual seria a velocidade de Jô depois de $10s$ se ela
+{\bf Desafio 1:} Qual seria a velocidade de Jô depois de $2s$ se ela
 não tivesse um pára-quedas? (O que muda no problema?)
 
 \hrulefill
