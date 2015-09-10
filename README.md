@@ -10,7 +10,7 @@ A divulgação do material para os alunos é feita pelo endereço: https://sites
 * [EDOs de primeira ordem separáveis](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-1ordem_separaveis.pdf)
 * [Problemas de Valor Inicial (PVI) e de Contorno (PVC)](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-PVI_PVC.pdf)
 * [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_1ordem.pdf)
-* EDOs lineares de segunda ordem (parte I)
+* EDOs lineares de segunda ordem homogêneas
 * EDOs lineares de segunda ordem (parte II)
 * Séries Geométricas
 * Séries de Taylor
