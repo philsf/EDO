@@ -14,6 +14,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * [EDOs de primeira ordem separáveis](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-1ordem_separaveis.pdf)
 * [Problemas de Valor Inicial (PVI) e de Contorno (PVC)](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-PVI_PVC.pdf)
 * [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_1ordem.pdf)
+* Fator Integrante
 * EDOs lineares de segunda ordem homogêneas
 * EDOs lineares de segunda ordem (parte II)
 * Séries Geométricas
@@ -25,6 +26,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * [EDOs de primeira ordem separáveis](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-gabarito.pdf)
 * [Problema de Valor Inicial (PVI)](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-gabarito.pdf)
 * [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-modelagem_1ordem-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-modelagem_1ordem-gabarito.pdf)
+* [Fator Integrante](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-fator_integrante-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-fator_integrante-gabarito.pdf)
 * [EDOs de segunda ordem](https://docs.google.com/document/d/1-BmiUVAdVN5nerjWv8Py_ce-ctnKoDW8lAwk0wB5lTA/export?format=pdf)
 * [Séries Geométricas](https://docs.google.com/document/d/1SzDV6EnP5WM0Ysb1eURae9CrinNkMA0r0BomVyj8CFQ/export?format=pdf)
 * [Séries de Taylor](https://docs.google.com/document/d/1XzQs6j4Ad07F6rBgE0AOMT9aIAoSHnYt9xfN3jVWtV4/export?format=pdf)
