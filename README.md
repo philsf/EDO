@@ -15,7 +15,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * [Problemas de Valor Inicial (PVI) e de Contorno (PVC)](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-PVI_PVC.pdf)
 * [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_1ordem.pdf)
 * Fator Integrante
-* EDOs lineares de segunda ordem homogêneas
+* [EDOs lineares de segunda ordem homogêneas](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-2ordem_homogeneas.pdf)
 * EDOs lineares de segunda ordem (parte II)
 * Séries Geométricas
 * Séries de Taylor
