@@ -213,5 +213,67 @@ Mas e se houver atrito?
 
 \subsection{Oscilador Harmônico Amortecido}
 
+Suponha agora que há atrito diminuindo a velocidade do tijolo. A
+tendência é, portanto, que o tijolo diminua as oscilações, até parar,
+certo? Este é o Oscilador Harmônico Amortecido.
+
+Digamos que a força de atrito é proporcional à velocidade $s'$ do
+objeto (assim como no modelo da resistência do ar), ou seja, $R=as'$,
+onde $a$ é o coeficiente de atrito.% e $s'$ é a velocidade.
+
+A força resultante $F=ms''$ no objeto é a soma vetorial das forças
+atuantes: a mola e o atrito.
+
+\begin{displaymath}
+  F = - as' -ks
+\end{displaymath}
+\begin{displaymath}
+  ms'' = -as' -ks
+\end{displaymath}
+\begin{displaymath}
+  ms'' +as' + ks =0
+\end{displaymath}
+\begin{displaymath}
+  s'' +\frac{a}{m}s' + \frac{k}{m}s  =0
+\end{displaymath}
+
+Por simplicidade, vamos chamar $b=\frac{a}{m}$ e
+$c=\frac{k}{m}$. Assim, a equação acima fica $s''+bs'+cs=0$, cuja
+equação característica é $r^2+br+c=0$.
+
+Ao resolver esta última equação com o método da equação característica
+($r^2+br+c=0$), podemos identificar quanto amortecimento há neste sistema.
+
+\begin{enumerate}
+\item Super-amortecido: não há oscilação
+\item Sub-amortecido: o sistema oscila cada vez menos, até voltar para
+  o equilíbrio
+\end{enumerate}
+
+Podemos distinguir entre estes dois casos analisando a equação
+característica.
+
+Lembre-se que as soluções de uma EDO linear sempre envolvem funções
+exponenciais. Como estamos modelando um amortecimento, a amplitude das
+oscilações deve {\bf decair}, portanto precisamos obrigatoriamente de
+uma taxa negativa nas exponenciais! Esta é a idéia que unifica todas
+as fórmulas abaixo:
+
+\begin{enumerate}
+\item Super-amortecido: $\Delta>0$, com ambas raízes $r_1<0$ e
+  $r_2<0$.
+\item Sub-amortecido: $\Delta<0$, com parte real $\alpha<0$.
+\end{enumerate}
+
+Além destes dois tipos de amortecimento, podemos também identificar
+outros dois interessantes:
+
+\begin{itemize}
+\item Criticamente amortecido (caso intermediário entre o super e o
+  sub amortecido): $\Delta=0$, com raiz $r<0$. Para isto, basta que
+  $b>0$ (pense: por quê?)
+\item Não amortecido: $\Delta<0$ com parte real $\alpha=0$. Compare
+  com o Oscilador Harmônico Simples.
+\end{itemize}
 
 \end{document}
