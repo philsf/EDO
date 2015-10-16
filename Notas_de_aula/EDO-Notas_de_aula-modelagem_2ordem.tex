@@ -1,0 +1,287 @@
+%\everymath{\displaystyle}
+%\documentclass[pdftex,a4paper]{article}
+\documentclass[a4paper]{article}
+%%classes: article, report, book, proc, amsproc
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Misc
+% para acertar os acentos
+\usepackage[brazilian]{babel} 
+%\usepackage[portuguese]{babel} 
+% \usepackage[english]{babel}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+% \usepackage{graphicx} %See PDF section
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{20pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF support
+
+\usepackage[pdftex]{color,graphicx}
+% %% Hyper-refs
+\usepackage[pdftex]{hyperref} % for printing
+% \usepackage[pdftex,bookmarks,colorlinks]{hyperref} % for screen
+
+%% \newif\ifPDF
+%% \ifx\pdfoutput\undefined\PDFfalse
+%% \else\ifnum\pdfoutput > 0\PDFtrue
+%%      \else\PDFfalse
+%%      \fi
+%% \fi
+
+%% \ifPDF
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage{aeguill}
+%%   \usepackage[pdftex]{graphicx,color}
+%%   \usepackage[pdftex]{hyperref}
+%% \else
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage[dvips]{graphicx}
+%%   \usepackage[dvips]{hyperref}
+%% \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math
+\usepackage{amsmath,amsfonts,amssymb}
+% para usar R de Real do jeito que o povo gosta
+\usepackage{amsfonts} % \mathbb
+% para usar as letras frescas como L de Espaco das Transf Lineares
+% \usepackage{mathrsfs} % \mathscr
+
+% Oferecer seno e tangente em pt, com os comandos usuais.
+\providecommand{\sin}{} \renewcommand{\sin}{\hspace{2pt}\mathrm{sen}}
+\providecommand{\tan}{} \renewcommand{\tan}{\hspace{2pt}\mathrm{tg}}
+
+% dt of integrals = \ud t
+\newcommand{\ud}{\mathrm{\ d}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Título e cabeçalho
+%\noindent\parbox[c]{.15\textwidth}{\includegraphics[width=.15\textwidth]{logo}}\hfill
+\parbox[c]{.825\textwidth}{\raggedright%
+  \sffamily {\LARGE
+
+Equações Diferenciais: Notas de Aula
+
+Modelagem matemática com EDOs de segunda ordem
+
+\par\bigskip}
+{Prof: Felipe Figueiredo\par}
+{\url{http://sites.google.com/site/proffelipefigueiredo}\par}
+}
+
+Versão: \verb|20151015|
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos de aprendizagem}
+
+Ao final desta aula o aluno deve conhecer os Osciladores Harmônicos
+Simples e Amortecido.
+
+% \section{Pré-requitos da aula}
+
+% \begin{itemize}
+% \item 
+% \item 
+% \end{itemize}
+
+\section{Conteúdo}
+
+O aluno deve consultar o livro texto nas seções 11.10 e 11.11 para se
+aprofundar no conteúdo desta aula.
+
+\subsection{Problema}
+
+Um tijolo de 2Kg está em repouso, pendurado em uma mola que tem
+coeficiente de elasticidade 8$\frac{N}{cm}$. Você puxa o tijolo para
+baixo, esticando a mola em 5cm e o solta. Assumindo que não há atrito,
+o tijolo oscila para cima e para baixo em movimento harmônico
+simples. Descrever este movimento no como a posição $s$ no espaço em
+função do tempo, a amplitude, a frequência e o período da oscilação.
+
+\subsection{A Lei de Hooke e o Oscilador Harmônico Simples}
+
+% Ao deslocar e soltar o tijolo, ele descreve um movimento oscilatório
+% para cima e para baixo. Como não há atrito, ele faz esse vai-e-vem
+% para sempre. Este é o Oscilador Harmônico Simples (OHS).
+
+Quando o tijolo está na posição $s$ força da mola que atua no tijolo é
+dada pela lei de Hooke.
+
+\begin{displaymath}
+  F = -ks
+\end{displaymath}
+
+Sabemos pela segunda lei de Newton, que a resultante é $F=m s''$, onde
+$s''$ é aceleração.
+\begin{displaymath}
+  ms'' = -ks \Rightarrow ms'' +ks =0
+\end{displaymath}
+\begin{displaymath}
+  s''+\frac{k}{m}s=0
+\end{displaymath}
+
+
+Para simplificar a notação, chamemos
+$\omega=\sqrt{\frac{k}{m}}$. Assim $\omega^2 = \frac{k}{m}$, e a
+equação do OHS fica apenas:
+
+\begin{displaymath}
+  s''+\omega^2s=0
+\end{displaymath}
+
+Essa mudança de variáveis tem algumas vantagens: (a) esta constante
+tem uma interpretação física: a frequência (angular) da oscilação e
+(b) $\omega$ já aparece na solução da EDO, facilitando a resolução e
+(c) a equação fica mais simpática.
+
+% \begin{displaymath}
+%   s(t) = K_1 \cos(\omega t) + K_2 \sin(\omega t)
+% \end{displaymath}
+
+% Podemos descobrir os valores de $K_1$ e $K_2$ tanto com valores
+% iniciais, ou valores de contorno. No problema inicial desta aula,
+% temos valores iniciais.
+
+As características deste movimento são dados pelas seguintes fórmulas:
+
+\begin{itemize}
+\item Frequência $\omega = \sqrt{\frac{k}{m}}$
+\item Período $T= \frac{2\pi}{\omega}$
+\item Amplitude $A = \sqrt{K_1^2 + K_2^2}$
+\end{itemize}
+
+{\bf Tijolo}
+
+Vamos agora voltar ao nosso tijolo, e usar estas fórmulas para
+descrever seu movimento:
+
+\begin{displaymath}
+  s''+4s=0
+\end{displaymath}
+
+Assim, podemos identificar que $\omega^2=\frac{8}{2}=4$, donde
+$\omega=2$. O período é $T=\frac{2\pi}{2}=\pi$. Para encontrarmos a
+amplitude, precisamos descobrir $K_1$ e $K_2$.
+
+Como o tijolo foi deslocado para a posição inicial $s(0)=5$, e solto
+com velocidade inicial $s'(0)=0$, podemos estas informações para
+calcular  $K_1$ e $K_2$ e encontrar a solução do PVI.
+
+\begin{displaymath}
+  s(0) = K_1 \cos0 + K_2 \sin 0 = K_1 \Rightarrow K_1 = 5
+\end{displaymath}
+
+Calculando a derivada de $s(t)$ (exercício!) temos
+$s'(t) = -2K_1 \sin t + 2K_2 \cos t$. Assim:
+
+\begin{displaymath}
+  s'(0) = -2K_1 \sin 0 + 2K_2 \cos 0 = 2K_2 \Rightarrow 2K_2 = 0
+  \Rightarrow K_2=0
+\end{displaymath}
+
+Agora com os valores de $K_1$ e $K_2$ podemos escrever a solução do
+PVI ($s(t) = 5\cos(2t)$), e calcular a amplitude do movimento:
+
+\begin{displaymath}
+  A = \sqrt{5^2 +0^2} = 5
+\end{displaymath}
+
+Conclusão: na ausência de atrito, o tijolo se desloca para cima e para
+baixo, atingindo sempre o deslocamento máximo de 5cm em relação à
+posição de repouso.
+
+Mas e se houver atrito?
+
+\subsection{Oscilador Harmônico Amortecido}
+
+Suponha agora que há atrito diminuindo a velocidade do tijolo. A
+tendência é, portanto, que o tijolo diminua as oscilações até parar,
+certo? Este é o Oscilador Harmônico Amortecido.
+
+Digamos que a força de atrito é proporcional à velocidade $s'$ do
+objeto (assim como no modelo da resistência do ar), ou seja, $R=as'$,
+onde $a$ é o coeficiente de atrito.% e $s'$ é a velocidade.
+
+A força resultante $F=ms''$ no objeto é a soma vetorial das forças
+atuantes: a mola e o atrito.
+
+% \begin{displaymath}
+%   F = - as' -ks
+% \end{displaymath}
+\begin{displaymath}
+  ms'' = -as' -ks \Rightarrow   ms'' +as' + ks =0
+\end{displaymath}
+% \begin{displaymath}
+%   ms'' = -as' -ks
+% \end{displaymath}
+% \begin{displaymath}
+%   ms'' +as' + ks =0
+% \end{displaymath}
+\begin{displaymath}
+  s'' +\frac{a}{m}s' + \frac{k}{m}s  =0
+\end{displaymath}
+
+Por simplicidade, vamos chamar $b=\frac{a}{m}$ e
+$c=\frac{k}{m}$. Assim, a equação acima fica $s''+bs'+cs=0$, cuja
+equação característica é $r^2+br+c=0$.
+
+Ao resolver esta última equação com o método da equação característica
+($r^2+br+c=0$), podemos identificar quanto amortecimento há neste sistema.
+
+\begin{enumerate}
+\item Super-amortecido: não há oscilação
+\item Sub-amortecido: o sistema oscila cada vez menos, até voltar para
+  o equilíbrio
+\end{enumerate}
+
+Podemos distinguir entre estes dois tipos de amortecimento fazendo o
+estudo das raízes da equação característica. Isto começa pelo
+discriminante $\Delta$, para identificar se são reais (e quantas) ou
+complexas.
+
+Lembre-se que as soluções de uma EDO linear sempre envolvem funções
+exponenciais. Estas funções podem crescer, ou decair. Como estamos
+modelando um amortecimento, a amplitude das oscilações deve {\bf
+  decair}, portanto precisamos obrigatoriamente de uma taxa negativa
+nas exponenciais! Esta é a idéia que unifica todas as fórmulas abaixo:
+
+\begin{enumerate}
+\item Super-amortecido: $\Delta>0$, com ambas raízes $r_1<0$ e
+  $r_2<0$.
+\item Sub-amortecido: $\Delta<0$, com parte real $\alpha<0$.
+\end{enumerate}
+
+Para outra maneira fácil de distinguir os dois tipos de amortecimento
+acima, basta lembrar que a oscilação vem das funções
+trigonométricas. Assim, com $\Delta>0$ (raízes reais) não há
+oscilação, apenas o decaimento (de volta ao repouso). Moleza.
+
+Além destes dois tipos de amortecimento, podemos também identificar
+outros dois interessantes:
+
+\begin{itemize}
+\item Criticamente amortecido (caso intermediário entre o super e o
+  sub amortecido): $\Delta=0$, com raiz $r<0$. Para isto, basta que
+  $b>0$ (pense: por quê?)
+\item Não amortecido: $\Delta<0$ com parte real $\alpha=0$. Compare
+  com o Oscilador Harmônico Simples.
+\end{itemize}
+
+\end{document}
