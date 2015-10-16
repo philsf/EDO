@@ -115,7 +115,103 @@ o tijolo oscila para cima e para baixo em movimento harmônico
 simples. Descrever este movimento no como a posição $s$ no espaço em
 função do tempo, a amplitude, a frequência e o período da oscilação.
 
-\subsection{Lei de Hooke}
+\subsection{A Lei de Hooke e o Oscilador Harmônico Simples}
+
+Quando o tijolo está na posição $s$ força da mola que atua no tijolo é
+dada pela lei de Hooke.
+
+\begin{displaymath}
+  F = -ks
+\end{displaymath}
+
+Sabemos pela segunda lei de Newton, que a resultante é $F=ma$ e que a
+aceleração $a=s''$. Assim
+\begin{displaymath}
+  ma = -ks \Rightarrow ms'' +ks =0
+\end{displaymath}
+\begin{displaymath}
+  s''+\frac{k}{m}s=0
+\end{displaymath}
+
+Que é uma EDO linear homogênea de segunda ordem com coeficientes
+constantes. Para simplificar a notação, vamos substituir a constante
+$\frac{k}{m}$ por $\omega^2$. Assim, $\omega=\sqrt{\frac{k}{m}}$. Após
+essa transformação, a equação fica:
+
+\begin{displaymath}
+  s''+\omega^2s=0
+\end{displaymath}
+
+Essa mudança de variáveis tem algumas vantagens: (a) A equação fica
+com uma única constante e (b) Esta constante tem uma interpretação
+física: a frequência (angular) da oscilação e (c) $\omega$ já aparece
+na solução da EDO!
+
+\begin{displaymath}
+  s(t) = K_1 \cos(\omega t) + K_2 \sin(\omega t)
+\end{displaymath}
+
+Podemos descobrir os valores de $K_1$ e $K_2$ tanto com valores
+iniciais, ou valores de contorno. No problema inicial desta aula,
+temos valores iniciais.
+
+As características deste movimento são dados pelas seguintes fórmulas:
+
+\begin{enumerate}
+\item Frequência ($\omega$)
+\begin{displaymath}
+  \omega = \frac{k}{m}
+\end{displaymath}
+\item Período (T)
+\begin{displaymath}
+  T= \frac{2\pi}{\omega}
+\end{displaymath}
+\item Amplitude (A)
+\begin{displaymath}
+  A = \sqrt{K_1^2 + K_2^2}
+\end{displaymath}
+\end{enumerate}
+
+Vamos agora usar estas fórmulas para descrever o movimento do tijolo:
+
+Equação
+\begin{displaymath}
+  s''+4s=0
+\end{displaymath}
+
+Assim, podemos identificar que $\omega^2=\frac{8}{2}=4$, donde
+$\omega=2$. O período é $T=\frac{2\pi}{2}=\pi$. Para encontrarmos a
+amplitude, precisamos descobrir $K_1$ e $K_2$.
+
+Como o tijolo foi deslocado para a posição inicial $s(0)=5$, e solto
+com velocidade inicial $s'(0)=0$, podemos estas informações para
+calcular  $K_1$ e $K_2$ e encontrar a solução do PVI.
+
+\begin{displaymath}
+  s(0) = K_1 \cos0 + K_2 \sin 0 = K_1 \Rightarrow K_1 = 5
+\end{displaymath}
+
+Calculando a derivada de $s(t)$ (exercício!) temos
+$s'(t) = -2K_1 \sin t + 2K_2 \cos t$. Assim:
+
+\begin{displaymath}
+  s'(0) = -2K_1 \sin 0 + 2K_2 \cos 0 = 2K_2 \Rightarrow 2K_2 = 0
+  \Rightarrow K_2=0
+\end{displaymath}
+
+Agora com os valores de $K_1$ e $K_2$ podemos escrever a solução do
+PVI ($s(t) = 5\cos(2t)$), e calcular a amplitude do movimento:
+
+\begin{displaymath}
+  A = \sqrt{5^2 +0^2} = 5
+\end{displaymath}
+
+Conclusão: na ausência de atrito, o tijolo sobe e desce a 5cm da
+posição de repouso.
+
+Mas e se houver atrito?
+
+\subsection{Oscilador Harmônico Amortecido}
 
 
 \end{document}
