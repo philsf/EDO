@@ -112,6 +112,57 @@ no conteúdo desta aula.
 
 \subsection{O método da Equação Característica}
 
+Considere a seguinte EDO linear de segunda ordem homogênea:
 
+\begin{displaymath}
+  ay'' + by' + cy =0
+\end{displaymath}
+
+Como ela tem os coeficientes ($a$, $b$ e $c$) constantes, podemos
+resolvê-la usando sua equação característica. Para identificá-la,
+basta construir um polinômio com os mesmos coeficientes que a EDO,
+``substituindo'' as derivadas pelos expoentes:
+
+\begin{displaymath}
+  ar^2 + br +c=0
+\end{displaymath}
+
+Assim, a segunda derivada $y''$ está associada a $r^2$, e assim
+sucessivamente. Observe que a função $y$ não tem derivadas, por isto
+está associada a $r^0=1$.
+
+Para resolver o polinômio, usamos a tradicional fórmula de Bhaskara:
+
+\begin{displaymath}
+  r=\frac{-b \pm \sqrt{\Delta}}{2a}
+\end{displaymath}
+onde
+\begin{displaymath}
+  \Delta = b^2 - 4ac
+\end{displaymath}
+
+Fazendo o estudo dos sinais de $\Delta$, podemos descobrir como são as
+raízes. Se $\Delta>0$, a equação possui duas raízes reais distintas
+($r_1$ e $r_2$). Se $\Delta=0$, ela possui duas raízes reais iguais
+($r_1=r_2=r$). Quando $\Delta<0$, a equação característica possui duas
+raízes complexas conjugadas ($\alpha \pm \beta i$).
+
+Estas três situações possíveis nos retornam três fórmulas para a
+solução geral da EDO de segunda ordem:
+
+\begin{enumerate}
+\item $\Delta>0$
+  \begin{displaymath}
+    y(x) = K_1e^{r_1x} + K_2e^{r_2x}
+  \end{displaymath}
+\item $\Delta=0$
+  \begin{displaymath}
+    y(x) = K_1e^{rx} + K_2xe^{rx}
+  \end{displaymath}
+\item $\Delta<0$
+  \begin{displaymath}
+    y(x) = K_1e^{\alpha x}\cos(\beta x) + K_2e^{\alpha x}\sin(\beta x)
+  \end{displaymath}
+\end{enumerate}
 
 \end{document}
