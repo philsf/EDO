@@ -232,5 +232,46 @@ na solução geral, encontramos a solução do PVI:
   y(x) =  2e^x -e^{-x}
 \end{displaymath}
 
+\hrulefill
+
+{\bf Exemplo 2}
+
+Considere o seguinte PVI:
+\begin{displaymath}
+  y''-4y' +4y=0, y(0)=3, y'(0)=10
+\end{displaymath}
+
+Equação característica
+
+\begin{displaymath}
+  r^2-4r+4=0
+\end{displaymath}
+
+Discriminante: $\Delta=0$ (uma raiz real $r$).
+
+Raiz: $r=2$
+
+Solução geral: $y(x) = K_1e^{2x} + K_2xe^{2x}$
+
+Substituindo a condição inicial $y(0)$:
+
+\begin{displaymath}
+  y(0) = K_1e^0 + 0 \Rightarrow K_1=3
+\end{displaymath}
+
+Derivada: $y'(x) = 2K_1e^{2x} + K_2e^{2x} + 2K_2xe^{2x}$
+
+Substituindo a condição inicial $y'(0)$:
+\begin{displaymath}
+  y'(0) = 2\times 3\times e^0 + K_2e^0 + 0 \Rightarrow 6+ K_2=10
+\end{displaymath}
+
+Portanto $K_1=3$ e $K_2=4$. A solução do PVI é portanto:
+
+\begin{displaymath}
+  y(x) = 3e^{2x} + 4xe^{2x}
+\end{displaymath}
+
+
 \end{multicols}
 \end{document}
