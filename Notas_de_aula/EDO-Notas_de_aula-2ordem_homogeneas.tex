@@ -83,7 +83,7 @@ EDOs de 2a ordem homogêneas
 {\url{http://sites.google.com/site/proffelipefigueiredo}\par}
 }
 
-Versão: \verb|YYYYMMDD|
+Versão: \verb|20151015|
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -99,18 +99,235 @@ característica, e resolver PVIs e PVCs homogêneos.
 \section{Pré-requitos da aula}
 
 \begin{itemize}
-\item 
-\item 
+\item Raízes do polinômio do segundo grau
+\item Parte real e parte imaginária de um número complexo
 \end{itemize}
 
 \section{Conteúdo}
 
-O aluno deve consultar o livro texto na seção X.Y para se aprofundar
+O aluno deve consultar o livro texto na seção 11.11 para se aprofundar
 no conteúdo desta aula.
 
-\subsection{Problema}
+% \subsection{Problema}
 
-\subsection{``Título''}
+\subsection{O método da Equação Característica}
 
+Considere a seguinte EDO linear de segunda ordem homogênea:
 
+\begin{displaymath}
+  ay'' + by' + cy =0
+\end{displaymath}
+
+Como ela tem os coeficientes ($a$, $b$ e $c$) constantes, podemos
+resolvê-la usando sua equação característica. Para identificá-la,
+basta construir um polinômio com os mesmos coeficientes que a EDO,
+``substituindo'' as derivadas pelos expoentes:
+
+\begin{displaymath}
+  ar^2 + br +c=0
+\end{displaymath}
+
+Assim, a segunda derivada $y''$ está associada a $r^2$, e assim
+sucessivamente. Observe que a função $y$ não tem derivadas, por isto
+está associada a $r^0=1$.
+
+Para resolver o polinômio, usamos a tradicional fórmula de Bhaskara:
+
+\begin{displaymath}
+  r=\frac{-b \pm \sqrt{\Delta}}{2a}
+\end{displaymath}
+onde
+\begin{displaymath}
+  \Delta = b^2 - 4ac
+\end{displaymath}
+
+Fazendo o estudo dos sinais de $\Delta$, podemos descobrir como são as
+raízes. Se $\Delta>0$, a equação possui duas raízes reais distintas
+($r_1$ e $r_2$). Se $\Delta=0$, ela possui duas raízes reais iguais
+($r_1=r_2=r$). Quando $\Delta<0$, a equação característica possui duas
+raízes complexas conjugadas ($\alpha \pm \beta i$).
+
+Estas três situações possíveis nos retornam três fórmulas para a
+solução geral da EDO de segunda ordem:
+
+\begin{enumerate}
+\item $\Delta>0$
+  \begin{displaymath}
+    y(x) = K_1e^{r_1x} + K_2e^{r_2x}
+  \end{displaymath}
+\item $\Delta=0$
+  \begin{displaymath}
+    y(x) = K_1e^{rx} + K_2xe^{rx}
+  \end{displaymath}
+\item $\Delta<0$
+  \begin{displaymath}
+    y(x) = K_1e^{\alpha x}\cos(\beta x) + K_2e^{\alpha x}\sin(\beta x)
+  \end{displaymath}
+\end{enumerate}
+
+\subsection{Exemplos}
+
+\begin{multicols}{2}
+{\bf Exemplo 1}
+Considere o seguinte PVI:
+
+\begin{displaymath}
+  y''-y=0, y(0)=1, y'(0)=3
+\end{displaymath}
+
+Equação característica:
+\begin{displaymath}
+  r^2-1=0
+\end{displaymath}
+
+Como $\Delta>0$, existem duas raízes reais distintas:
+
+\begin{displaymath}
+  r_1 = 1, r_2=-1
+\end{displaymath}
+
+Substituindo na fórmula, encontramos a solução geral da EDO:
+
+\begin{displaymath}
+  y(x) = K_1e^x+K_2e^{-x}
+\end{displaymath}
+
+Para encontrar o valor das constantes $K$, usamos as condições
+iniciais ($y_0$ e $y'_0$):
+
+\begin{displaymath}
+  y(0) = K_1e^0+K_2e^0 = K_1 + K_2
+\end{displaymath}
+\begin{displaymath}
+  1=K_1+K_2
+\end{displaymath}
+
+Para usar a condição $y'(0)$, precisamos calcular a derivada de $y$,
+que é:
+\begin{displaymath}
+  y'(x) = K_1e^x-K_2e^{-x}
+\end{displaymath}
+
+Substituindo:
+\begin{displaymath}
+    y'(0) = K_1e^0-K_2e^0
+\end{displaymath}
+\begin{displaymath}
+  3=K_1-K_2
+\end{displaymath}
+
+Temos assim, um sistema $2 \times 2$ para as constantes $K$:
+\begin{displaymath}
+  \left\{
+    \begin{array}{l}
+      K_1+K_2=1\\
+      K_1-K_2=3
+    \end{array}
+\right.
+\end{displaymath}
+
+Resolvendo, encontramos $K_1=2$ e $K_2=-1$. Substituindo estes valores
+na solução geral, encontramos a solução do PVI:
+
+\begin{displaymath}
+  y(x) =  2e^x -e^{-x}
+\end{displaymath}
+
+\hrulefill
+
+{\bf Exemplo 2}
+
+Considere o seguinte PVI:
+\begin{displaymath}
+  y''-4y' +4y=0, y(0)=3, y'(0)=10
+\end{displaymath}
+
+Equação característica
+
+\begin{displaymath}
+  r^2-4r+4=0
+\end{displaymath}
+
+Discriminante: $\Delta=0$ (uma raiz real $r$).
+
+Raiz: $r=2$
+
+Solução geral:
+\begin{displaymath}
+  y(x) = K_1e^{2x} + K_2xe^{2x}
+\end{displaymath}
+
+Substituindo a condição inicial $y(0)$:
+
+\begin{displaymath}
+  y(0) = K_1e^0 + 0 \Rightarrow K_1=3
+\end{displaymath}
+
+Derivada: $y'(x) = 2K_1e^{2x} + K_2e^{2x} + 2K_2xe^{2x}$
+
+Substituindo a condição inicial $y'(0)$:
+\begin{displaymath}
+  y'(0) = 2\times 3\times e^0 + K_2e^0 + 0 \Rightarrow 6+ K_2=10
+\end{displaymath}
+
+Portanto $K_1=3$ e $K_2=4$. A solução do PVI é portanto:
+
+\begin{displaymath}
+  y(x) = 3e^{2x} + 4xe^{2x}
+\end{displaymath}
+
+\hrulefill
+
+{\bf Exemplo 3}
+
+Considere o seguinte PVC:
+\begin{displaymath}
+  y''+4y=0, y(0)=2, y(\frac{\pi}{4})=3
+\end{displaymath}
+
+Equação característica:
+
+\begin{displaymath}
+  r^2+4=0
+\end{displaymath}
+
+Discriminante: $\Delta=-16$ (raízes complexas)
+
+Raízes: $0 \pm 2i$
+
+Solução geral:
+\begin{displaymath}
+  y(x) = K_1e^{0 x}\cos(2 x) + K_2e^{0 x}\sin(2 x)
+\end{displaymath}
+\begin{displaymath}
+  y(x) = K_1\cos(2 x) + K_2\sin(2 x)
+\end{displaymath}
+
+Condição inicial $y(0)$
+
+\begin{displaymath}
+  y(x) = K_1\cos 0 + K_2\sin 0
+\end{displaymath}
+\begin{displaymath}
+  2 = K_1+0
+\end{displaymath}
+
+Condição final $y(\frac{\pi}{4})$
+
+\begin{displaymath}
+  y(\frac{\pi}{4}) = K_1\cos(2 \frac{\pi}{4}) + K_2\sin(2 \frac{\pi}{4})
+\end{displaymath}
+\begin{displaymath}
+  y(\frac{\pi}{4}) = K_1\cos( \frac{\pi}{2}) + K_2\sin( \frac{\pi}{2})
+\end{displaymath}
+\begin{displaymath}
+  3 = 0+K_2
+\end{displaymath}
+
+Portanto $K_1=2$ e $K_2=3$. A solução do PVC é portanto:
+\begin{displaymath}
+  y(x) = 2\cos(2 x) +3\sin(2 x)
+\end{displaymath}
+
+\end{multicols}
 \end{document}
