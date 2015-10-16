@@ -276,6 +276,58 @@ Portanto $K_1=3$ e $K_2=4$. A solução do PVI é portanto:
   y(x) = 3e^{2x} + 4xe^{2x}
 \end{displaymath}
 
+\hrulefill
+
+{\bf Exemplo 3}
+
+Considere o seguinte PVC:
+\begin{displaymath}
+  y''+4y=0, y(0)=2, y(\frac{\pi}{4})=3
+\end{displaymath}
+
+Equação característica:
+
+\begin{displaymath}
+  r^2+4=0
+\end{displaymath}
+
+Discriminante: $\Delta=-16$ (raízes complexas)
+
+Raízes: $0 \pm 2i$
+
+Solução geral:
+\begin{displaymath}
+  y(x) = K_1e^{0 x}\cos(2 x) + K_2e^{0 x}\sin(2 x)
+\end{displaymath}
+\begin{displaymath}
+  y(x) = K_1\cos(2 x) + K_2\sin(2 x)
+\end{displaymath}
+
+Condição inicial $y(0)$
+
+\begin{displaymath}
+  y(x) = K_1\cos 0 + K_2\sin 0
+\end{displaymath}
+\begin{displaymath}
+  2 = K_1+0
+\end{displaymath}
+
+Condição final $y(\frac{\pi}{4})$
+
+\begin{displaymath}
+  y(\frac{\pi}{4}) = K_1\cos(2 \frac{\pi}{4}) + K_2\sin(2 \frac{\pi}{4})
+\end{displaymath}
+\begin{displaymath}
+  y(\frac{\pi}{4}) = K_1\cos( \frac{\pi}{2}) + K_2\sin( \frac{\pi}{2})
+\end{displaymath}
+\begin{displaymath}
+  3 = 0+K_2
+\end{displaymath}
+
+Portanto $K_1=2$ e $K_2=3$. A solução do PVC é portanto:
+\begin{displaymath}
+  y(x) = 2\cos(2 x) +3\sin(2 x)
+\end{displaymath}
 
 \end{multicols}
 \end{document}
