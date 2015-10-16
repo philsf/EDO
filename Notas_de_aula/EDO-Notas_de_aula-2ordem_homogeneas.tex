@@ -165,4 +165,72 @@ solução geral da EDO de segunda ordem:
   \end{displaymath}
 \end{enumerate}
 
+\subsection{Exemplos}
+
+\begin{multicols}{2}
+Considere o seguinte PVI:
+
+\begin{displaymath}
+  y''-y=0, y(0)=1, y'(0)=3
+\end{displaymath}
+
+Equação característica:
+\begin{displaymath}
+  r^2-1=0
+\end{displaymath}
+
+Como $\Delta>0$, existem duas raízes reais distintas:
+
+\begin{displaymath}
+  r_1 = 1, r_2=-1
+\end{displaymath}
+
+Substituindo na fórmula, encontramos a solução geral da EDO:
+
+\begin{displaymath}
+  y(x) = K_1e^x+K_2e^{-x}
+\end{displaymath}
+
+Para encontrar o valor das constantes $K$, usamos as condições
+iniciais ($y_0$ e $y'_0$):
+
+\begin{displaymath}
+  y(0) = K_1e^0+K_2e^0 = K_1 + K_2
+\end{displaymath}
+\begin{displaymath}
+  1=K_1+K_2
+\end{displaymath}
+
+Para usar a condição $y'(0)$, precisamos calcular a derivada de $y$,
+que é:
+\begin{displaymath}
+  y'(x) = K_1e^x-K_2e^{-x}
+\end{displaymath}
+
+Substituindo:
+\begin{displaymath}
+    y'(0) = K_1e^0-K_2e^0
+\end{displaymath}
+\begin{displaymath}
+  3=K_1-K_2
+\end{displaymath}
+
+Temos assim, um sistema $2 \times 2$ para as constantes $K$:
+\begin{displaymath}
+  \left\{
+    \begin{array}{l}
+      K_1+K_2=1\\
+      K_1-K_2=3
+    \end{array}
+\right.
+\end{displaymath}
+
+Resolvendo, encontramos $K_1=2$ e $K_2=-1$. Substituindo estes valores
+na solução geral, encontramos a solução do PVI:
+
+\begin{displaymath}
+  y(x) =  2e^x -e^{-x}
+\end{displaymath}
+
+\end{multicols}
 \end{document}
