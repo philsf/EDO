@@ -4,6 +4,8 @@ Este é o repositório das Disciplina de Equações Diferenciais e Séries do pr
 
 A divulgação do material para os alunos é feita pelo endereço: https://sites.google.com/site/proffelipefigueiredo/anhanguera/disciplinas/equacoes-diferenciais
 
+Obs: Conforme issue [#59](https://github.com/philsf/EDO/issues/59), criei um repositório separado para o conteúdo de [Séries](https://github.com/philsf/Series).
+
 ## Objetivo
 
 Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e suas aplicações.
