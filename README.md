@@ -18,7 +18,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_1ordem.pdf)
 * Fator Integrante
 * [EDOs lineares de segunda ordem homogêneas](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-2ordem_homogeneas.pdf)
-* [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_2ordem.pdf)
+* [Modelagem matemática com EDOs de segunda ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_2ordem.pdf)
 * Séries Geométricas
 * Séries de Taylor
 * Séries de Fourier
