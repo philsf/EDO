@@ -19,7 +19,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * Fator Integrante
 * [EDOs lineares de segunda ordem homogêneas](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-2ordem_homogeneas.pdf)
 * [Modelagem matemática com EDOs de segunda ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_2ordem.pdf)
-* Séries Geométricas
+* [Séries Geométricas](https://github.com/philsf/Series/raw/master/Notas_de_aula/Series-Geometricas.pdf)
 * Séries de Taylor
 * Séries de Fourier
 
@@ -32,7 +32,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * [EDOs de segunda ordem](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-2ordem-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-2ordem-gabarito.pdf) -  [PLT](https://docs.google.com/document/d/1-BmiUVAdVN5nerjWv8Py_ce-ctnKoDW8lAwk0wB5lTA/export?format=pdf)
 * [Séries Geométricas](https://docs.google.com/document/d/1SzDV6EnP5WM0Ysb1eURae9CrinNkMA0r0BomVyj8CFQ/export?format=pdf)
 * [Séries de Taylor](https://docs.google.com/document/d/1XzQs6j4Ad07F6rBgE0AOMT9aIAoSHnYt9xfN3jVWtV4/export?format=pdf)
-* Séries de Fourier
+* [Séries de Fourier](https://docs.google.com/document/d/1j4BB95YHOSrUqWTZldF9OmlnJR9yxL-ms233grEE-KM/export?format=pdf)
 
 ## Trabalhos
 
