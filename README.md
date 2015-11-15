@@ -36,14 +36,29 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 
 ## Listas de exercícios e problemas
 
-* [EDOs de primeira ordem separáveis](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-gabarito.pdf)
-* [Problema de Valor Inicial (PVI)](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-gabarito.pdf)
-* [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-modelagem_1ordem-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-modelagem_1ordem-gabarito.pdf)
-* [Fator Integrante](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-fator_integrante-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-fator_integrante-gabarito.pdf)
-* [EDOs de segunda ordem](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-2ordem-exercicios.pdf) - [Gabarito](https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-2ordem-gabarito.pdf) -  [PLT](https://docs.google.com/document/d/1-BmiUVAdVN5nerjWv8Py_ce-ctnKoDW8lAwk0wB5lTA/export?format=pdf)
-* [Séries Geométricas](https://docs.google.com/document/d/1SzDV6EnP5WM0Ysb1eURae9CrinNkMA0r0BomVyj8CFQ/export?format=pdf)
-* [Séries de Taylor](https://docs.google.com/document/d/1XzQs6j4Ad07F6rBgE0AOMT9aIAoSHnYt9xfN3jVWtV4/export?format=pdf)
-* [Séries de Fourier](https://docs.google.com/document/d/1j4BB95YHOSrUqWTZldF9OmlnJR9yxL-ms233grEE-KM/export?format=pdf)
+* [EDOs de primeira ordem separáveis][] - [Gabarito][Gab-EDO1]
+* [Problema de Valor Inicial (PVI)][] - [Gabarito][Gab-PVI]
+* [Modelagem matemática com EDOs de primeira ordem][] - [Gabarito][Gab-modelagem1]
+* [Fator Integrante][] - [Gabarito][Gab-FatInt]
+* [EDOs de segunda ordem][] - [Gabarito][Gab-EDO2] - [PLT][PLT-EDO2]
+* Séries Geométricas - [PLT][PLT-SG]
+* Séries de Taylor - [PLT][PLT-ST]
+* Séries de Fourier - [PLT][PLT-SF]
+
+[EDOs de primeira ordem separáveis]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-exercicios.pdf
+[Gab-EDO1]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-gabarito.pdf "Gabarito"
+[Problema de Valor Inicial (PVI)]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-exercicios.pdf
+[Gab-PVI]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-gabarito.pdf
+[Modelagem matemática com EDOs de primeira ordem]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-modelagem_1ordem-exercicios.pdf
+[Gab-modelagem1]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-modelagem_1ordem-gabarito.pdf
+[Fator Integrante]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-fator_integrante-exercicios.pdf
+[Gab-FatInt]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-fator_integrante-gabarito.pdf
+[EDOs de segunda ordem]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-2ordem-exercicios.pdf
+[Gab-EDO2]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-2ordem-gabarito.pdf
+[PLT-EDO2]: https://docs.google.com/document/d/1-BmiUVAdVN5nerjWv8Py_ce-ctnKoDW8lAwk0wB5lTA/export?format=pdf
+[PLT-SG]: https://docs.google.com/document/d/1SzDV6EnP5WM0Ysb1eURae9CrinNkMA0r0BomVyj8CFQ/export?format=pdf
+[PLT-ST]: https://docs.google.com/document/d/1XzQs6j4Ad07F6rBgE0AOMT9aIAoSHnYt9xfN3jVWtV4/export?format=pdf
+[PLT-SF]: https://docs.google.com/document/d/1j4BB95YHOSrUqWTZldF9OmlnJR9yxL-ms233grEE-KM/export?format=pdf
 
 ## Trabalhos
 
