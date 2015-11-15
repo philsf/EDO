@@ -9,24 +9,30 @@ Obs: Conforme issue [#59][], criei um repositório separado para o conteúdo de 
 [#59]: https://github.com/philsf/EDO/issues/59
 [Séries]: https://github.com/philsf/Series
 
-
-
 ## Objetivo
 
 Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e suas aplicações.
 
 ##Planejamento de aulas de conteúdo
 
-* [Introdução às EDOs](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-intro.pdf)
-* [EDOs de primeira ordem separáveis](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-1ordem_separaveis.pdf)
-* [Problemas de Valor Inicial (PVI) e de Contorno (PVC)](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-PVI_PVC.pdf)
-* [Modelagem matemática com EDOs de primeira ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_1ordem.pdf)
+* [Introdução às EDOs][]
+* [EDOs de primeira ordem separáveis][]
+* [Problemas de Valor Inicial (PVI) e de Contorno (PVC)][]
+* [Modelagem matemática com EDOs de primeira ordem][]
 * Fator Integrante
-* [EDOs lineares de segunda ordem homogêneas](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-2ordem_homogeneas.pdf)
-* [Modelagem matemática com EDOs de segunda ordem](https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_2ordem.pdf)
-* [Séries Geométricas](https://github.com/philsf/Series/raw/master/Notas_de_aula/Series-Geometricas.pdf)
+* [EDOs lineares de segunda ordem homogêneas][]
+* [Modelagem matemática com EDOs de segunda ordem][]
+* [Séries Geométricas][]
 * Séries de Taylor
 * Séries de Fourier
+
+[Introdução às EDOs]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-intro.pdf
+[EDOs de primeira ordem separáveis]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-1ordem_separaveis.pdf
+[Problemas de Valor Inicial (PVI) e de Contorno (PVC)]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-PVI_PVC.pdf
+[Modelagem matemática com EDOs de primeira ordem]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_1ordem.pdf
+[EDOs lineares de segunda ordem homogêneas]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-2ordem_homogeneas.pdf
+[Modelagem matemática com EDOs de segunda ordem]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_2ordem.pdf
+[Séries Geométricas]: https://github.com/philsf/Series/raw/master/Notas_de_aula/Series-Geometricas.pdf
 
 ## Listas de exercícios e problemas
 
