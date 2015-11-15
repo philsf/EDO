@@ -62,9 +62,15 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 
 ## Trabalhos
 
-* [Trabalho 1](https://github.com/philsf/EDO/raw/master/Trabalhos/EDO-Trabalho1.pdf)
-* [Trabalho 2](https://github.com/philsf/EDO/raw/master/Trabalhos/EDO-Trabalho2.pdf)
+* [Trabalho 1][]
+* [Trabalho 2][]
+
+[Trabalho 1]: https://github.com/philsf/EDO/raw/master/Trabalhos/EDO-Trabalho1.pdf
+[Trabalho 2]: https://github.com/philsf/EDO/raw/master/Trabalhos/EDO-Trabalho2.pdf
 
 ## Licensa
-Todo o material contido aqui é distribuído sob a licensa [Creative Commons Atribuição](http://creativecommons.org/licenses/by/4.0/deed.pt_BR)
+Todo o material contido aqui é distribuído sob a licensa [Creative Commons Atribuição][]
+
+[Creative Commons Atribuição]: http://creativecommons.org/licenses/by/4.0/deed.pt_BR
+
 
