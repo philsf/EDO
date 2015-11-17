@@ -23,7 +23,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * [EDOs lineares de segunda ordem homogêneas][]
 * [Modelagem matemática com EDOs de segunda ordem][]
 * [Séries Geométricas][]
-* Séries de Taylor
+* [Séries de Taylor][]
 * Séries de Fourier
 
 [Introdução às EDOs]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-intro.pdf
@@ -33,6 +33,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 [EDOs lineares de segunda ordem homogêneas]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-2ordem_homogeneas.pdf
 [Modelagem matemática com EDOs de segunda ordem]: https://github.com/philsf/EDO/raw/master/Notas_de_aula/EDO-Notas_de_aula-modelagem_2ordem.pdf
 [Séries Geométricas]: https://github.com/philsf/Series/raw/master/Notas_de_aula/Series-Geometricas.pdf
+[Séries de Taylor]: https://github.com/philsf/Series/raw/master/Notas_de_aula/Series-Taylor.pdf
 
 ## Listas de exercícios e problemas
 
