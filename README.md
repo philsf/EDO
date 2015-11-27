@@ -46,7 +46,7 @@ Apresentar aos alunos os fundamentos das Equações Diferenciais Ordinárias e s
 * Séries de Taylor - [PLT][PLT-ST]
 * Séries de Fourier - [PLT][PLT-SF]
 
-[ListaEDO1]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-exercicios.pdf
+[Lista-EDO1]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-exercicios.pdf
 [Gab-EDO1]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-1ordem_separaveis-gabarito.pdf "Gabarito"
 [Lista-PVI]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-exercicios.pdf
 [Gab-PVI]: https://github.com/philsf/EDO/raw/master/Listas/EDO-lista-PVI_Campos-gabarito.pdf
